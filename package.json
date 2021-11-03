@@ -1,0 +1,20 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Deployed Product/Services Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Icahpv/cpnt262-final-project.git"
+  },
+  "author": "Icah, Alex, Chris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Icahpv/cpnt262-final-project/issues"
+  },
+  "homepage": "https://github.com/Icahpv/cpnt262-final-project#readme"
+}
