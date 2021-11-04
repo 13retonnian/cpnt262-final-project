@@ -10,9 +10,9 @@
 
 ### Group Members
 
-- Icah Vega 
-- Chris Barber
-- Alex-Byung Uk
+- [Icah Vega](https://github.com/Icahpv) 
+- [Chris Barber](https://github.com/13retonnian)
+- [Alex-Byung Uk](https://github.com/byung1211)
 
 ## Rules
 
