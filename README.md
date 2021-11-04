@@ -1,6 +1,10 @@
 # CPNT262 - Final Group Project
 
-
++ Class: Web Dev Fall 2021
++ Instructor: [Tony Grimes]()
++ Links: [Github Repo Link]() | [Github Pages Link]()
++ Deadline: November 15, 2021 at 11:59 pm
++ Course Mark: 35%
 
 ## About the project
 
@@ -24,4 +28,4 @@
 
 
 #### License
-[MIT License](License)
+[MIT License](License) :scroll:
