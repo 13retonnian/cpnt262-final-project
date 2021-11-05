@@ -10,9 +10,9 @@
 
 ### Group Members
 
-- [Icah Vega](https://github.com/Icahpv) 
-- [Chris Barber](https://github.com/13retonnian)
-- [Alex-Byung Uk](https://github.com/byung1211)
+- [Icah Vega](https://github.com/Icahpv) :neckbeard:
+- [Chris Barber](https://github.com/13retonnian) :sunglasses:
+- [Alex-Byung Uk](https://github.com/byung1211) :bowtie:
 
 ## Rules
 
@@ -36,6 +36,7 @@
 10. [Bed](https://pixabay.com/photos/dog-sleeping-dog-resting-5216758/) by [Matt Coulton](https://pixabay.com/users/mattycoulton-15501404/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5175643) from [Pixabay](https://pixabay.com/)
 11. [Dog Tag](https://pixabay.com/photos/dog-dog-tag-dog-id-5175652/) by [Matt Coulton](https://pixabay.com/users/mattycoulton-15501404/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5175643) from [Pixabay](https://pixabay.com/)
 12. [Doctor Dog](https://www.pexels.com/photo/cute-dog-in-medical-clothes-with-stethoscope-5733421/) by [Sam Lion](https://www.pexels.com/@sam-lion) from [Pexels](https://www.pexels.com/)
+13. [Collar](https://www.pexels.com/photo/labrador-with-wooden-stick-in-mouth-7210753/) by [Blue Bird](https://www.pexels.com/@blue-bird) from [Pexels](https://www.pexels.com/)
 
 ### Reference
 
