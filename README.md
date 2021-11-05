@@ -1,10 +1,10 @@
 # CPNT262 - Final Group Project
 
 + Class: Web Dev Fall 2021
-+ Instructor: [Tony Grimes]()
-+ Links: [Github Repo Link]() | [Github Pages Link]()
++ Instructor: [Tony Grimes](https://github.com/acidtone)
++ Links: [Github Repo Link](https://github.com/Icahpv/cpnt262-final-project.git) | [Github Pages Link]()
 + Deadline: November 15, 2021 at 11:59 pm
-+ Course Mark: 35%
++ Course Mark: 40%
 
 ## About the project
 
