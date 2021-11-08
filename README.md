@@ -13,7 +13,7 @@
 - [Icah Vega](https://github.com/Icahpv) :information_desk_person:
 - [Chris Barber](https://github.com/13retonnian) :sunglasses:
 - [Alex-Byung Uk](https://github.com/byung1211) :bowtie:
-- [Jesse Thadi](:information_desk_person:) :sob:
+- [Jesse Thadi](https://github.com/JesseThadi) :sob:
 
 ## Rules
 
