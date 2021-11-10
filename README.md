@@ -8,6 +8,8 @@
 
 ## About the project
 
+Fancy Feature: Dog toy recommender
+
 ### Group Members
 
 - [Icah Vega](https://github.com/Icahpv) :information_desk_person:
