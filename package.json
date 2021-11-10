@@ -1,5 +1,5 @@
 {
-  "name": "final-project",
+  "name": "cpnt262-final-project",
   "version": "1.0.0",
   "description": "Deployed Product/Services Website",
   "main": "server.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Icahpv/cpnt262-final-project.git"
   },
-  "author": "Icah, Alex, Chris",
+  "author": "Icah, Alex, Chris, Jesse",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Icahpv/cpnt262-final-project/issues"
