@@ -1,5 +1,5 @@
 {
-  "name": "final-project",
+  "name": "cpnt262-final-project",
   "version": "1.0.0",
   "description": "Deployed Product/Services Website",
   "main": "server.js",
@@ -11,10 +11,16 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Icahpv/cpnt262-final-project.git"
   },
-  "author": "Icah, Alex, Chris",
+  "author": "Icah, Alex, Chris, Jesse",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Icahpv/cpnt262-final-project/issues"
   },
-  "homepage": "https://github.com/Icahpv/cpnt262-final-project#readme"
+  "homepage": "https://github.com/Icahpv/cpnt262-final-project#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.15"
+  }
 }
