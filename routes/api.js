@@ -1,14 +1,13 @@
 const express = require('express')
 const app = express()
-//const castles = require('../data/castles')
 const router = express.Router();
 //connect to database
-const db = require('../model/db')
+const db = require('../models/db')
 const mongoose = require('mongoose');
 const { response } = require('express');
 const dotenv = require('dotenv').config()
 
-const dogImages = new mongoose.Schema({
+const dogImagesSchema = new mongoose.Schema({
   id: Number,
   name: String,
   description: String,
