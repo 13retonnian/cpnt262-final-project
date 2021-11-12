@@ -1,4 +1,4 @@
-// Coded by Christopher Barber, Jesse Thadi, Icah Vega with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
+// Coded by Christopher Barber, Jesse Thadi, Icah Vega, Alex Uk with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 // Install modules
 const express = require('express')
 const app = express()

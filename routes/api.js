@@ -1,3 +1,4 @@
+// Coded by Christopher Barber, Jesse Thadi, Icah Vega, Alex Uk with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 const express = require('express')
 const app = express()
 const router = express.Router();
@@ -15,9 +16,9 @@ const dogImagesSchema = new mongoose.Schema({
   width: Number,
   height: Number,
 });
-const DogImage = mongoose.model('DogImage', dogImagesSchema)
+const DogImage = mongoose.model('Dog-Image', dogImagesSchema)
 
-router.get('/dogImage', async (req, res) => {  
+router.get('/dog-images', async (req, res) => {  
   try{
     const dogImage = await DogImage.find()  
     res.send(dogImage)
@@ -26,7 +27,7 @@ router.get('/dogImage', async (req, res) => {
   }
 })
 
-router.get('/dogImage/:id', async (req, res) => { 
+router.get('/dog-images/:id', async (req, res) => { 
   try{
     const dogImage = await DogImage.findOne({ id: req.params.id })
     if(!dogImage) {
