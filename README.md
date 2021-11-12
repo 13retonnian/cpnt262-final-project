@@ -8,7 +8,7 @@
 
 ## About the project
 
-Fancy Feature: Dog toy recommender
+Fancy Feature: Dog toy recommender.
 
 ### Group Members
 
@@ -40,9 +40,11 @@ Fancy Feature: Dog toy recommender
 11. [Dog Tag](https://pixabay.com/photos/dog-dog-tag-dog-id-5175652/) by [Matt Coulton](https://pixabay.com/users/mattycoulton-15501404/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5175643) from [Pixabay](https://pixabay.com/)
 12. [Doctor Dog](https://www.pexels.com/photo/cute-dog-in-medical-clothes-with-stethoscope-5733421/) by [Sam Lion](https://www.pexels.com/@sam-lion) from [Pexels](https://www.pexels.com/)
 13. [Collar](https://www.pexels.com/photo/labrador-with-wooden-stick-in-mouth-7210753/) by [Blue Bird](https://www.pexels.com/@blue-bird) from [Pexels](https://www.pexels.com/)
+14. [Dog Bone Logo](dog-bone-logo.png) by [Christopher Barber](https://github.com/13retonnian) :sunglasses:. 
 
 ### Reference
 
+- Logo animation by [Animate.css](https://animate.style/).
 
 #### License
 [MIT License](License) :scroll:
