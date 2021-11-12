@@ -2,7 +2,10 @@
 // Install modules
 const express = require('express')
 const app = express()
-const castles = require('./data/dog-images')
+//const dogImages = require('./data/dog-images')
+const dogImages = require('./models/dog-images')
+//const groupMembers = require('./models/members')
+//const subscribers = require('./models/subscirbers')
 const dotenv = require('dotenv').config()
 
 //initialize API public folder
