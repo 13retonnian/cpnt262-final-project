@@ -24,8 +24,17 @@
   <main>
     <!-- TODO: Create a form that asks for `name` and `email address` -->
     <!-- create a submit button -->
-    <form action="" method="post">
-      
+    <form action="/api/members" method="post">
+      <fieldset>
+        <legend>
+          Please enter your info to subscribe to our spam I mean mailing list:
+        </legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required> 
+        <input type="submit" value="Subscribe">
+      </fieldset>
     </form>
   </main>
   <footer>

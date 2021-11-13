@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+form {
+  max-width: min-content;
+  margin: auto;
+  padding: 2rem;
+}
+
+input, label {
+  display: block;
+}

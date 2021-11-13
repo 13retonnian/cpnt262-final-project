@@ -3,10 +3,11 @@
 const express = require('express')
 const app = express()
 //const dogImages = require('./data/dog-images')
-const dogImages = require('./models/dog-images')
+//const dogImages = require('./models/dog-images')
 //const groupMembers = require('./models/members')
-//const subscribers = require('./models/subscirbers')
+//const subscribers = require('./models/subscribers')
 const dotenv = require('dotenv').config()
+
 
 //initialize API public folder
 app.use(express.static('public'))
