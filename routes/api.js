@@ -59,33 +59,34 @@ router.get('/team', async (req, res) => {
   }
 })
 
-router.get('/team/:name', async(req, res) => {
-  try{
-    const members = await teamList.findOne({ name: req.params.name })
-    if(!teamList) {
-      throw new Error()
-    }
-  } catch (error) {
-    res.status(400)
-    res.send({ error: 'Member Not Found'
-  }
-})
+  router.get('/team/:name', async (req, res) => { 
+    try{
+      const members = await teamList.findOne({ id: req.params.id })
+      if(!teamList) {
+        throw new Error()
+      }
+      res.send(teamList)
+    } catch (error) {
+      res.status(404)    
+      res.send({error: 'Member Not Found'})
+    } 
+  })
 
 //subscribers
-app.post('/api/subscribers', async (request, response) => {
+router.post('/api/subscribers', async (req, res) => {
 
   try {
-    const subscriber = new Subscriber(request.body)
+    const subscriber = new Subscriber(req.body)
   
     await subscriber.save()
   
     console.log(subscriber)
-    response.redirect('/success.html')
+    res.redirect('/success.html')
 
   } catch(err) {
 
     console.log(err)
-    response.redirect('/fail.html')   
+    res.redirect('/fail.html')   
 
   }
 })
