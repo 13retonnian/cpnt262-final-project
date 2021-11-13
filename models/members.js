@@ -24,7 +24,7 @@ const team = [
   },
   {
     name: 'Jesse Thadi',
-    profilePic: ,
+    profilePic: 'n/a',
     title: 'Front-End Dude',
     bio: 'Front end team will not be a team without Jesse!',
     github: 'https://github.com/JesseThadi'
