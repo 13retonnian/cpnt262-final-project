@@ -38,20 +38,20 @@ router.get('/dog-images/:id', async (req, res) => {
   } 
 })
 
-app.post('/api/subscribers', async (request, response) => {
+router.post('/api/subscribers', async (req, res) => {
 
   try {
-    const subscriber = new Subscriber(request.body)
+    const subscriber = new Subscriber(req.body)
   
     await subscriber.save()
   
     console.log(subscriber)
-    response.redirect('/success.html')
+    res.redirect('/success.html')
 
   } catch(err) {
 
     console.log(err)
-    response.redirect('/fail.html')
+    res.redirect('/fail.html')
     
   }
 })
