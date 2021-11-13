@@ -49,32 +49,33 @@ const teamSchema = new mongoose.Schema({
 })
 
 const teamList = mongoose.model('Team', teamSchema)
+
 console.log(teamList)
+
 router.get('/team', async (req, res) => {
   try {
     const members = await teamList.find()
-    res.send(teamList)
+    res.send(members)
   } catch (error) {
     res.send({error: 'Members Not Found'})
   }
 })
 
-  router.get('/team/:name', async (req, res) => { 
-    try{
-      const members = await teamList.findOne({ id: req.params.id })
-      if(!teamList) {
-        throw new Error()
-      }
-      res.send(teamList)
-    } catch (error) {
-      res.status(404)    
-      res.send({error: 'Member Not Found'})
-    } 
-  })
+router.get('/team/:name', async(req, res) => {
+  try{
+    const members = await teamList.findOne({ name: req.params.name })
+    if(!members) {
+      throw new Error()
+    }
+    res.send(members)
+  } catch (error) {
+    res.status(400)
+    res.send({ error: 'Member Not Found'})
+  }
+})
 
 //subscribers
-router.post('/api/subscribers', async (req, res) => {
-
+router.post('/api/subscribers', async (request, response) => {
   try {
     const subscriber = new Subscriber(req.body)
   
@@ -84,10 +85,8 @@ router.post('/api/subscribers', async (req, res) => {
     res.redirect('/success.html')
 
   } catch(err) {
-
     console.log(err)
-    res.redirect('/fail.html')   
-
+    res.redirect('/fail.html')    
   }
 })
 
