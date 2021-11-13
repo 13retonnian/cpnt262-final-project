@@ -2,11 +2,9 @@
 const express = require('express')
 const app = express()
 const router = express.Router();
+const subscribers = require('../models/subscriber')
 //connect to database
-const db = require('../models/db')
 const mongoose = require('mongoose');
-const { response } = require('express');
-const dotenv = require('dotenv').config()
 
 const dogImagesSchema = new mongoose.Schema({
   id: Number,
@@ -69,7 +67,26 @@ router.get('/team/:name', async(req, res) => {
     }
   } catch (error) {
     res.status(400)
-    res.send({ error: 'Member Not Found'})
+    res.send({ error: 'Member Not Found'
+  }
+})
+
+//subscribers
+app.post('/api/subscribers', async (request, response) => {
+
+  try {
+    const subscriber = new Subscriber(request.body)
+  
+    await subscriber.save()
+  
+    console.log(subscriber)
+    response.redirect('/success.html')
+
+  } catch(err) {
+
+    console.log(err)
+    response.redirect('/fail.html')   
+
   }
 })
 
