@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 const router = express.Router();
-const subscribers = require('../models/subscriber')
+const Subscriber = require('../models/subscriber')
 //connect to database
 const mongoose = require('mongoose');
 
@@ -75,7 +75,8 @@ router.get('/team/:name', async(req, res) => {
 })
 
 //subscribers
-router.post('/api/subscribers', async (request, response) => {
+router.post('/subscribers', async (req, res) => {
+  console.log("made it to subscribers")
   try {
     const subscriber = new Subscriber(req.body)
   
