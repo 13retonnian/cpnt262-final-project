@@ -38,6 +38,40 @@ router.get('/dog-images/:id', async (req, res) => {
   } 
 })
 
+// Team Members
+
+const teamSchema = new mongoose.Schema({
+  name: String,
+  profilePic: String,
+  title: String,
+  bio: String,
+  github: String,
+})
+
+const teamList = mongoose.model('Team', teamSchema)
+console.log(teamList)
+router.get('/team', async (req, res) => {
+  try {
+    const members = await teamList.find()
+    res.send(teamList)
+  } catch (error) {
+    res.send({error: 'Members Not Found'})
+  }
+})
+
+router.get('/team/:name', async(req, res) => {
+  try{
+    const members = await teamList.findOne({ name: req.params.name })
+    if(!teamList) {
+      throw new Error()
+    }
+  } catch (error) {
+    res.status(400)
+    res.send({ error: 'Member Not Found'
+  }
+})
+
+//subscribers
 app.post('/api/subscribers', async (request, response) => {
 
   try {
@@ -51,8 +85,8 @@ app.post('/api/subscribers', async (request, response) => {
   } catch(err) {
 
     console.log(err)
-    response.redirect('/fail.html')
-    
+    response.redirect('/fail.html')   
+
   }
 })
 
