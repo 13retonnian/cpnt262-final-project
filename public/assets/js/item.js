@@ -1,15 +1,13 @@
-
+'use strict';
+const v = "Hi! I'm a strict mode script!";
 let output ='';
-
-// console.log("made it to item page")
 
 const urlParams = new URLSearchParams(window.location.search);
 
-console.log(urlParams.get('id'))
-
 if (urlParams.get('id') !== null) {
+
   const id = urlParams.get('id')
-  //console.log("made it inside query params is number")
+  
   fetch(`https://fantastic-four-dogs.herokuapp.com/api/dog-images?id=${id}`)
     .then(function(response){
       if (!response.ok) {
