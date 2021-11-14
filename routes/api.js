@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const router = express.Router();
 const Subscriber = require('../models/subscriber')
+const teamList = require('../models/member')
 //connect to database
 const mongoose = require('mongoose');
 
@@ -53,18 +54,6 @@ router.get('/dog-images/:id', async (req, res) => {
 })
 
 // Team Members
-
-const teamSchema = new mongoose.Schema({
-  name: String,
-  profilePic: String,
-  title: String,
-  bio: String,
-  github: String,
-})
-
-const teamList = mongoose.model('Team', teamSchema)
-
-console.log(teamList)
 
 router.get('/team', async (req, res) => {
   try {
