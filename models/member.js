@@ -1,4 +1,9 @@
+//install modules
 const mongoose = require('./db')
+
+/*****************/
+/* Define Schema */
+/*****************/
 
 const teamSchema = new mongoose.Schema({
   name: String,
@@ -8,6 +13,8 @@ const teamSchema = new mongoose.Schema({
   github: String,
 })
 
-//const teamList = mongoose.model('Team', teamSchema)
+/*****************/
+/* Compile Model */
+/*****************/
 
 module.exports = mongoose.model('Team', teamSchema)
