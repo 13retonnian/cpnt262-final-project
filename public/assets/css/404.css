@@ -62,6 +62,47 @@ nav li:hover {
 
 /**********404***********/
 
+section {
+  padding: 10px;
+  background-image: url(../images/404-image/sm-404-dog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  max-width: 100%;
+}
+
+.error-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-text h2 {
+  font-size: 50px;
+}
+
+.error-text p {
+  font-size: 20px;
+}
+
+.error-text li{
+  margin: 1rem 4rem 1rem 4rem;
+  list-style: none;
+  background-color: #f3ee6a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.error-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.error-text li:hover {
+  background-color: #FEFFD0;
+}
 
 /**********footer***********/
 
