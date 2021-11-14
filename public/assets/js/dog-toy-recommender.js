@@ -1,6 +1,13 @@
 'use strict';
 
-const dogToys = ["stuffed animal",
+const dogToys = [
+  {
+    name: "stuffed animal",
+    price: "medium",
+    size: "regular",
+    chewiness: "delicate",
+    age: "young"
+  },
   "hard rubber chewer",
   "rubber chicken",
   "squeaky toy",
@@ -32,17 +39,19 @@ const dogToys = ["stuffed animal",
   "doll toy",
   "dog house",
   "dog waterfall",
-  "dog fish pond"]
+  "dog fish pond",
+  "dog skateboard"]
+
+let choiceList = ``
 
 const submitButton = document.querySelector(".submit-button")
 const resultSection = document.querySelector(".result-section")
 
 const submitButtonClick = function() {
-  const randomNumber = Math.floor((Math.random() * dogToys.length) + 1)
-  console.log(randomNumber)
+  const randomNumber = Math.floor((Math.random() * dogToys.length))  
   resultSection.innerHTML = `${dogToys[randomNumber]}`
 }
 
 submitButton.addEventListener("click", submitButtonClick);
 
-console.log(dogToys.length)
+
