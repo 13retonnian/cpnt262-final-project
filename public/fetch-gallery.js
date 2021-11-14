@@ -15,8 +15,8 @@ fetch('https://fantastic-four-dogs.herokuapp.com/api/dog-images')
     
     for(let i = 0; i < Number(data.length); i++){
       output += `
-      <a href="${data[i].imgURL}" target="_blank"><figure>
-        <img src="${data[i].imgURL}" alt="${data[i].description}">
+      <a href="${data[i].idURL}" target="_blank"><figure>
+        <img src="assets/images/${data[i].imageID}" alt="${data[i].description}">
         <figcaption>${data[i].name}</figcaption>
       </figure></a>`
     }

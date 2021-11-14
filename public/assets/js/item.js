@@ -1,7 +1,7 @@
 
 let output ='';
 
-console.log("made it to item page")
+// console.log("made it to item page")
 
 const urlParams = new URLSearchParams(window.location.search);
 
@@ -9,7 +9,7 @@ console.log(urlParams.get('id'))
 
 if (urlParams.get('id') !== null) {
   const id = urlParams.get('id')
-  console.log("made it inside query params is number")
+  //console.log("made it inside query params is number")
   fetch(`https://fantastic-four-dogs.herokuapp.com/api/dog-images?id=${id}`)
     .then(function(response){
       if (!response.ok) {
@@ -21,9 +21,10 @@ if (urlParams.get('id') !== null) {
       console.log(data)
       output = `
         <a href="${data.imgURL}" target="_blank"><figure>
-          <img src="${data.imgURL}" alt="${data.description}">
+          <img src="assets/images/${data.imageID}" alt="${data.description}">
           <figcaption>${data.name}</figcaption>
-        </figure></a>`
+        </figure>
+        </a>`
       
       document.querySelector('section').innerHTML = output;
     })

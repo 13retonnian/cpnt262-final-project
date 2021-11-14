@@ -21,32 +21,25 @@ header {
   margin: 1rem;
 }
 
+svg {
+  height: 7rem;
+  width: 9rem;
+}
+
 h1 {
   font-size: 3rem;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/homepage.jpg);
-  height: 60vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 nav ul {
   display: flex;
-  flex-wrap: wrap;
   margin: 2rem 0rem 2rem 0rem;
 }
 
 nav li {
   margin: 1rem 4rem 1rem 4rem;
   list-style: none;
-  background-color: #f3ee6a;
   padding: 10px;
+  background-color: #f3ee6a;
   border-radius: 10px;
 }
 
@@ -56,10 +49,11 @@ nav a {
   font-size: 15px;
 }
 
-nav li:hover {
+nav a:hover {
   background-color: #FEFFD0;
 }
-/***********content**********/
+
+/*******************content**********************/
 
 h2 {
   font-size: 3rem;
@@ -67,42 +61,14 @@ h2 {
   margin: 4rem;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem;
-  flex-wrap: wrap;
-}
-
-section .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  text-align: center;
-  width: 50ch;
-  height: 70ch;
-  border: 1px solid rgb(165, 165, 165);
-  margin: 3rem;
-}
-
-section ul {
-  list-style: none;
-}
-
 figure img {
   height: 20rem;
   width: 20rem;
   object-fit: cover;
-  border-radius: 50%;
+  object-position: 50% 20%; 
 }
 
-/**********footer***********/
-
-
+/*******************footer**********************/
 footer {
   display: flex;
   justify-content: center;
@@ -116,4 +82,3 @@ footer ul {
   list-style: none;
   margin: 2rem;
 }
-
