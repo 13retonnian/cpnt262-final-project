@@ -105,18 +105,4 @@ router.post('/subscribers', async (req, res) => {
   }
 })
 
-//item
-router.get('/dog-images', async (req, res) => { 
-
-  try{
-    const dogImage = await DogImage.findOne({ id: req.params.id })
-    if(!dogImage) {
-      throw new Error()
-    }
-    res.send(dogImage)
-  } catch (error) {
-    res.status(404)    
-    res.send({error: 'Dog Image Not Found'})
-  } 
-})
 module.exports = router
