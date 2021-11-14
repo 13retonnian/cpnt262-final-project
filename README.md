@@ -42,6 +42,9 @@ Fancy Feature: Dog toy recommender.
 13. [Collar](https://www.pexels.com/photo/labrador-with-wooden-stick-in-mouth-7210753/) by [Blue Bird](https://www.pexels.com/@blue-bird) from [Pexels](https://www.pexels.com/)
 14. [Dog Bone Logo](dog-bone-logo.png) by [Christopher Barber](https://github.com/13retonnian) :sunglasses:. 
 
+- (Query Stings and Params)[https://stackabuse.com/get-query-strings-and-parameters-in-express-js/]
+- attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
+
 ### Reference
 
 - Logo animation by [Animate.css](https://animate.style/).
