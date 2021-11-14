@@ -73,31 +73,59 @@ section {
 section .card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  width: 40ch;
-  height: 60ch;
+  width: 60ch;
+  height: 90ch;
+  border: 1px solid rgb(165, 165, 165);
+  margin: 3rem;
+  border-radius: 20px;
 }
 
-section ul {
-  list-style: none;
+section .card:hover {
+  box-shadow: 2px 2px 4px black;
+  transition-duration: s;
 }
 
-section > .card:nth-child(odd) {
-  background-color: #FEFFD0;
-  
-}
-
-section > .card:nth-child(even) {
-  background-color: #D0F7FF;
-}
-
-.card img {
-  height: 15rem;
-  width: 15rem;
+figure img {
+  height: 20rem;
+  width: 20rem;
   object-fit: cover;
+  border-radius: 50%;
+  margin: 2.5rem;
+}
+
+figcaption {
+  font-size: 2rem;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+p {
+  max-width: 30ch;
+  margin: 2rem;
+  font-size: 15px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.icon a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: magenta;
+  font-weight: bold;
+}
+
+.icon a:hover {
+  color: rebeccapurple;
 }
 
 /**********footer***********/
@@ -109,7 +137,7 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   background-color: #FEFFD0;
-  height: 20vh;
+  height: 30vh;
 } 
 
 footer ul {

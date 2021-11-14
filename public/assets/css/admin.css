@@ -61,45 +61,19 @@ h2 {
   margin: 4rem;
 }
 
+h3 {
+  font-size: 20px;
+  color: green;
+  text-align: center;
+}
+
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 6rem;
-}
-
-figure {
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border: 1px solid gray;
-  border-radius: 20px;
-  height: 30rem;
-  width: 20rem;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-figure:hover {
-  filter: opacity(0.5);
-  box-shadow: 1px 1px 3px black;
-}
-
-figure img {
-  height: 20rem;
-  width: 20rem;
-  object-fit: cover;
-  object-position: 50% 20%; 
-}
-
-section a, figcaption {
-  text-decoration: none;
-  margin: 3rem;
-  font-size: 20px;
-  color: black;
+  margin: 2rem;
+  font-size: 15px;
 }
 
 /*******************footer**********************/

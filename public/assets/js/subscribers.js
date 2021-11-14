@@ -1,3 +1,5 @@
+'use strict';
+const v = "Hi! I'm a strict mode script!";
 let output ='';
 
 
@@ -13,9 +15,10 @@ fetch(`https://fantastic-four-dogs.herokuapp.com/api/subscriber-list`)
     console.log(data.length)
     
     for(let i = 0; i < data.length; i++) {
-    output = `
-      <p>${data[i].name}</p>
-      <p>${data[i].email}</p>`
+    output += `
+      <h3>Member # ${i}:</h3>
+        <p>Name: ${data[i].name}</p>
+        <p>E-mail: ${data[i].email}</p>`
     }  
     document.querySelector('section').innerHTML = output;
   })
