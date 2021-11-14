@@ -20,10 +20,9 @@ fetch('https://fantastic-four-dogs.herokuapp.com/api/team')
           <img src="assets/images/team-pics/${data[i].profilePic}">
           <figcaption>${data[i].fullName}</figcaption>
         </figure>
-      <ul>
-        <li>${data[i].bio}</li>
-        <li><a href="${data[i].github}" target="_blank">Follow Me on Github!</a></li>
-      </ul></div>`
+      <p>${data[i].bio}</p>
+        <img src="assets/icons/github.png"><a href="${data[i].github}" target="_blank">${data[i].username}</a>
+      </div>`
     }
     console.log(output)
       document.querySelector('section').innerHTML = output;

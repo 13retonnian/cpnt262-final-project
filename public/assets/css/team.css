@@ -81,16 +81,12 @@ section .card {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-
   text-align: center;
   width: 50ch;
   height: 70ch;
   border: 1px solid rgb(165, 165, 165);
   margin: 3rem;
-}
-
-section ul {
-  list-style: none;
+  border-radius: 20px;
 }
 
 figure img {
