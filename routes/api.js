@@ -17,6 +17,20 @@ const dogImagesSchema = new mongoose.Schema({
 const DogImage = mongoose.model('Dog-Image', dogImagesSchema)
 
 router.get('/dog-images', async (req, res) => {  
+  //checking for query parameters first if there are arguments after dog-images in address bar this will get them and return a single thing    
+  if(req.query.id !== undefined) {    
+    try{
+      const dogImage = await DogImage.findOne({ id: req.query.id })
+      if(!dogImage) {
+        throw new Error()
+      }
+      res.send(dogImage)
+    } catch (error) {
+      res.status(404)    
+      res.send({error: 'Dog Image Not Found'})
+    }
+  }
+  //if there's no id arguments then send the whole list
   try{
     const dogImage = await DogImage.find()  
     res.send(dogImage)
@@ -91,4 +105,18 @@ router.post('/subscribers', async (req, res) => {
   }
 })
 
+//item
+router.get('/dog-images', async (req, res) => { 
+
+  try{
+    const dogImage = await DogImage.findOne({ id: req.params.id })
+    if(!dogImage) {
+      throw new Error()
+    }
+    res.send(dogImage)
+  } catch (error) {
+    res.status(404)    
+    res.send({error: 'Dog Image Not Found'})
+  } 
+})
 module.exports = router
