@@ -42,6 +42,7 @@ h2 {
   text-align: center;
   color: white;
   text-shadow: 1px 1px 4px black;
+  transition-delay: 1s;
 }
 
 nav ul {
@@ -80,14 +81,27 @@ section {
   padding: 2rem;
 }
 
-h3 {
-  font-size: 25px;
+h3, h4 {
+  font-size: 40px;
   margin: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 20px;
+  color: #fbfac2;
+  text-shadow: 1px 1px 6px #2fdcff;
 }
 
 section p {
   line-height: 2;
-  margin-bottom: 2rem;
+  margin: 2rem;
+  font-size: 15px;
+  text-align: justify;
+}
+
+section img {
+  height: 40rem;
+  width: 60rem;
+  margin: 2rem;
+  border-radius: 10px;
 }
 
 footer {
