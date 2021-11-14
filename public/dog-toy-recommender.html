@@ -54,18 +54,40 @@
         <section>
           <label for="dog-size">What is the size of the dog?</label>          
           <select class="dog-size" name="dog-size" value="select">
-          <option value="very-small">Very Small</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="very-lage">Very Large</option>          
+          <option value="very-small">Very Small (Chihuahua size)</option>
+          <option value="small">Small (Terrier size)</option>
+          <option value="medium">Medium (Dalmation size)</option>
+          <option value="large">Large (German Shepherd size)</option>
+          <option value="very-lage">Very Large (Afghan size)</option>          
           </select>
         </section>
         <section>
           <label for="dog-age">How old is the dog?</label>
           <input type="number" name="dog-age" value="0">          
-        </select>        
+        </section>        
+        <section>
+          <label for="dog-chewer">Is the dog a chewer?</label>
+          <select class="dog-chewer" name="dog-chewer" value="select"> 
+          <option value="rare-chewer">Seldomly chews things</option>
+          <option value="regular-chewer">Chews on things sometimes</option>
+          <option value="avid-chewer">Chews on things a lot</option>
+          <option value="problem-chewer">The dog chews up everything</option>
+        </section>
+        <section>
+          <label for="price-range">What's your price range?</label>
+          <select class="price-range" name="price-range" value="select" multiple> 
+          <option value="cheap">Inexpensive toy</option>
+          <option value="medium">Medium price</option>
+          <option value="expensive">Expensive toy</option>          
+        </section>
+        <section>
+          <label for="button">Get dog toy recommendation:</label>
+          <input type="button" value="submit-button" class="submit-button"> 
+        </section>
       </form>
+    </section>
+    <section class="result-section">
+
     </section>
   </main>
   <footer>
