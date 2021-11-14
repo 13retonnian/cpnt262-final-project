@@ -89,8 +89,7 @@ router.get('/team/:name', async(req, res) => {
 })
 
 //subscribers
-router.post('/subscribers', async (req, res) => {
-  console.log("made it to subscribers")
+router.post('/subscribers', async (req, res) => {  
   try {
     const subscriber = new Subscriber(req.body)
   
@@ -102,6 +101,15 @@ router.post('/subscribers', async (req, res) => {
   } catch(err) {
     console.log(err)
     res.redirect('/fail.html')    
+  }
+})
+
+router.get('/subscriber-list' , async (req, res) => {  
+  try{
+    const subscribers = await Subscriber.find()  
+    res.send(subscribers)
+  } catch (error) {
+    res.send({error: 'Subscribers Not Found'})
   }
 })
 
