@@ -1,4 +1,5 @@
-
+'use strict';
+const v = "Hi! I'm a strict mode script!";
 let output ='';
 
 const urlParams = new URLSearchParams(window.location.search);
