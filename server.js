@@ -27,8 +27,7 @@ app.use(function(req, res) {
   } else {  
     // else send HTML 404
     res.status(404)
-    res.redirect("./404.html")    
-    res.send('<h1>404: File Not Found</h1>')
+    res.redirect("./404.html")  
   }
 });
 
