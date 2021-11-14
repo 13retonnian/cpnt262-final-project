@@ -98,15 +98,6 @@ router.post('/subscribers', async (req, res) => {
   }
 })
 
-router.get('/subscriber-list' , async (req, res) => {  
-  try{
-    const subscribers = await Subscriber.find()  
-    res.send(subscribers)
-  } catch (error) {
-    res.send({error: 'Subscribers Not Found'})
-  }
-})
-
 router.get('/subscribers' , async (req, res) => {  
   try{
     const subscribers = await Subscriber.find()  
