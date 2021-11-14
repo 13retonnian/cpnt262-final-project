@@ -78,15 +78,20 @@ section {
 section .card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  width: 50ch;
-  height: 70ch;
+  width: 60ch;
+  height: 90ch;
   border: 1px solid rgb(165, 165, 165);
   margin: 3rem;
   border-radius: 20px;
+}
+
+section .card:hover {
+  box-shadow: 2px 2px 4px black;
+  transition-duration: s;
 }
 
 figure img {
@@ -94,6 +99,38 @@ figure img {
   width: 20rem;
   object-fit: cover;
   border-radius: 50%;
+  margin: 2.5rem;
+}
+
+figcaption {
+  font-size: 2rem;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+p {
+  max-width: 30ch;
+  margin: 2rem;
+  font-size: 15px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.icon a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: magenta;
+  font-weight: bold;
+}
+
+.icon a:hover {
+  color: rebeccapurple;
 }
 
 /**********footer***********/

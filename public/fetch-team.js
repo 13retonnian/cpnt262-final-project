@@ -15,14 +15,20 @@ fetch('https://fantastic-four-dogs.herokuapp.com/api/team')
     
     for(let i = 0; i < Number(data.length); i++){
       output += `
+
       <div class="card">
         <figure>
           <img src="assets/images/team-pics/${data[i].profilePic}">
           <figcaption>${data[i].fullName}</figcaption>
         </figure>
       <p>${data[i].bio}</p>
-        <img src="assets/icons/github.png"><a href="${data[i].github}" target="_blank">${data[i].username}</a>
-      </div>`
+        <div class="icon">
+          <img src="assets/icons/github.png">
+          <a href="${data[i].github}" target="_blank">
+          ${data[i].username}</a>
+        </div>
+      </div>
+      `
     }
     console.log(output)
       document.querySelector('section').innerHTML = output;
