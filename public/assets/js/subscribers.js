@@ -17,8 +17,8 @@ fetch(`https://fantastic-four-dogs.herokuapp.com/api/subscriber-list`)
     for(let i = 0; i < data.length; i++) {
     output += `
       <h3>Member # ${i}:</h3>
-      <p>Name: ${data[i].name}</p>
-      <p>E-mail: ${data[i].email}</p>`
+        <p>Name: ${data[i].name}</p>
+        <p>E-mail: ${data[i].email}</p>`
     }  
     document.querySelector('section').innerHTML = output;
   })
