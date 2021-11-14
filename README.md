@@ -43,8 +43,9 @@ Fancy Feature: Dog toy recommender.
 14. [Dog Bone Logo](dog-bone-logo.png) by [Christopher Barber](https://github.com/13retonnian) :sunglasses:. 
 15. [Jesse's profile pic](https://www.pexels.com/photo/selective-focus-photography-of-adult-black-and-white-border-collie-1124002/) by [Alotrobo](https://www.pexels.com/@aloismoubax) from [Pexels](https://www.pexels.com/).
 16. [404 Dog Photo](https://www.pexels.com/photo/smart-dog-in-eyeglasses-resting-on-cozy-bed-at-home-5255277/) by [Samson Katt](https://www.pexels.com/@samson-katt) from [Pexels](https://www.pexels.com/)
+17. [Github Icon](https://www.flaticon.com/premium-icon/github_2175377?term=github&page=1&position=5&page=1&position=5&related_id=2175377&origin=search) by [High Quality Icons](https://www.flaticon.com/authors/hight-quality-icons) by [Flaticon](https://www.flaticon.com/)
 
-- (Query Stings and Params)[https://stackabuse.com/get-query-strings-and-parameters-in-express-js/]
+- [Query Stings and Params](https://stackabuse.com/get-query-strings-and-parameters-in-express-js/)
 - attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 
 ### Reference
