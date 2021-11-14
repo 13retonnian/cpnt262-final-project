@@ -62,6 +62,44 @@ nav li:hover {
 /***********content**********/
 
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  flex-wrap: wrap;
+}
+
+section .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 40ch;
+  height: 60ch;
+}
+
+section ul {
+  list-style: none;
+}
+
+section > .card:nth-child(odd) {
+  background-color: #FEFFD0;
+  
+}
+
+section > .card:nth-child(even) {
+  background-color: #D0F7FF;
+}
+
+.card img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
 /**********footer***********/
 
 

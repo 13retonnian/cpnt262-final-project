@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 const router = express.Router();
-const subscribers = require('../models/subscriber')
+const Subscriber = require('../models/subscriber')
 //connect to database
 const mongoose = require('mongoose');
 
@@ -17,6 +17,20 @@ const dogImagesSchema = new mongoose.Schema({
 const DogImage = mongoose.model('Dog-Image', dogImagesSchema)
 
 router.get('/dog-images', async (req, res) => {  
+  //checking for query parameters first if there are arguments after dog-images in address bar this will get them and return a single thing    
+  if(req.query.id !== undefined) {    
+    try{
+      const dogImage = await DogImage.findOne({ id: req.query.id })
+      if(!dogImage) {
+        throw new Error()
+      }
+      res.send(dogImage)
+    } catch (error) {
+      res.status(404)    
+      res.send({error: 'Dog Image Not Found'})
+    }
+  }
+  //if there's no id arguments then send the whole list
   try{
     const dogImage = await DogImage.find()  
     res.send(dogImage)
@@ -49,11 +63,13 @@ const teamSchema = new mongoose.Schema({
 })
 
 const teamList = mongoose.model('Team', teamSchema)
+
 console.log(teamList)
+
 router.get('/team', async (req, res) => {
   try {
     const members = await teamList.find()
-    res.send(teamList)
+    res.send(members)
   } catch (error) {
     res.send({error: 'Members Not Found'})
   }
@@ -62,31 +78,30 @@ router.get('/team', async (req, res) => {
 router.get('/team/:name', async(req, res) => {
   try{
     const members = await teamList.findOne({ name: req.params.name })
-    if(!teamList) {
+    if(!members) {
       throw new Error()
     }
+    res.send(members)
   } catch (error) {
     res.status(400)
-    res.send({ error: 'Member Not Found'
+    res.send({ error: 'Member Not Found'})
   }
 })
 
 //subscribers
-app.post('/api/subscribers', async (request, response) => {
-
+router.post('/subscribers', async (req, res) => {
+  console.log("made it to subscribers")
   try {
-    const subscriber = new Subscriber(request.body)
+    const subscriber = new Subscriber(req.body)
   
     await subscriber.save()
   
     console.log(subscriber)
-    response.redirect('/success.html')
+    res.redirect('/success.html')
 
   } catch(err) {
-
     console.log(err)
-    response.redirect('/fail.html')   
-
+    res.redirect('/fail.html')    
   }
 })
 
