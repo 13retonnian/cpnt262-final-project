@@ -3,18 +3,14 @@ const express = require('express')
 const app = express()
 const router = express.Router();
 const Subscriber = require('../models/subscriber')
+const teamList = require('../models/member')
+const DogImage = require('../models/dog-images')
 //connect to database
 const mongoose = require('mongoose');
 
-const dogImagesSchema = new mongoose.Schema({
-  id: Number,
-  name: String,
-  description: String,
-  imgURL: String,
-  width: Number,
-  height: Number,
-});
-const DogImage = mongoose.model('Dog-Image', dogImagesSchema)
+//define routes
+
+// Dog Stuff Image Gallery
 
 router.get('/dog-images', async (req, res) => {  
   //checking for query parameters first if there are arguments after dog-images in address bar this will get them and return a single thing    
@@ -30,7 +26,7 @@ router.get('/dog-images', async (req, res) => {
       res.send({error: 'Dog Image Not Found'})
     }
   }
-  //if there's no id arguments then send the whole list
+  //if there's no query id arguments then send the whole list
   try{
     const dogImage = await DogImage.find()  
     res.send(dogImage)
@@ -54,18 +50,6 @@ router.get('/dog-images/:id', async (req, res) => {
 
 // Team Members
 
-const teamSchema = new mongoose.Schema({
-  name: String,
-  profilePic: String,
-  title: String,
-  bio: String,
-  github: String,
-})
-
-const teamList = mongoose.model('Team', teamSchema)
-
-console.log(teamList)
-
 router.get('/team', async (req, res) => {
   try {
     const members = await teamList.find()
@@ -88,7 +72,17 @@ router.get('/team/:name', async(req, res) => {
   }
 })
 
-//subscribers
+router.get('/members', async (req, res) => {
+  try {
+    const members = await teamList.find()
+    res.send(members)
+  } catch (error) {
+    res.send({error: 'Members Not Found'})
+  }
+})
+
+//Subscribers/Subscribe
+
 router.post('/subscribers', async (req, res) => {  
   try {
     const subscriber = new Subscriber(req.body)
@@ -104,7 +98,7 @@ router.post('/subscribers', async (req, res) => {
   }
 })
 
-router.get('/subscriber-list' , async (req, res) => {  
+router.get('/subscribers' , async (req, res) => {  
   try{
     const subscribers = await Subscriber.find()  
     res.send(subscribers)

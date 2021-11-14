@@ -59,77 +59,52 @@ nav a {
 nav li:hover {
   background-color: #FEFFD0;
 }
-/***********content**********/
 
+/**********404***********/
 
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem;
-  flex-wrap: wrap;
+  padding: 10px;
+  background-image: url(../images/404-image/sm-404-dog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  max-width: 100%;
 }
 
-section .card {
+.error-text {
+  padding: 10px;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 60ch;
-  height: 90ch;
-  border: 1px solid rgb(165, 165, 165);
-  margin: 3rem;
-  border-radius: 20px;
+  align-items: center;
 }
 
-section .card:hover {
-  box-shadow: 2px 2px 4px black;
-  transition-duration: s;
+.error-text h2 {
+  font-size: 50px;
 }
 
-figure img {
-  height: 20rem;
-  width: 20rem;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 2.5rem;
+.error-text p {
+  font-size: 20px;
 }
 
-figcaption {
-  font-size: 2rem;
-  padding-top: 10px;
-  font-weight: bold;
+.error-text li{
+  margin: 1rem 4rem 1rem 4rem;
+  list-style: none;
+  background-color: #f3ee6a;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-p {
-  max-width: 30ch;
-  margin: 2rem;
+.error-text a {
+  text-decoration: none;
+  color: black;
   font-size: 15px;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-
-.icon a {
-  margin-left: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: magenta;
-  font-weight: bold;
-}
-
-.icon a:hover {
-  color: rebeccapurple;
+.error-text li:hover {
+  background-color: #FEFFD0;
 }
 
 /**********footer***********/
-
 
 footer {
   display: flex;
@@ -137,7 +112,7 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   background-color: #FEFFD0;
-  height: 30vh;
+  height: 20vh;
 } 
 
 footer ul {

@@ -36,6 +36,14 @@ h1 {
   background-size: cover;
 }
 
+h2 {
+  font-size: 5rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -59,77 +67,28 @@ nav a {
 nav li:hover {
   background-color: #FEFFD0;
 }
-/***********content**********/
 
+/*******************content**********************/
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
-  flex-wrap: wrap;
-}
-
-section .card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 60ch;
-  height: 90ch;
-  border: 1px solid rgb(165, 165, 165);
-  margin: 3rem;
-  border-radius: 20px;
+  max-width: 120ch;
+  margin: auto;
+  padding: 2rem;
 }
 
-section .card:hover {
-  box-shadow: 2px 2px 4px black;
-  transition-duration: s;
+h3 {
+  font-size: 25px;
+  margin: 30px;
 }
 
-figure img {
-  height: 20rem;
-  width: 20rem;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 2.5rem;
+section p {
+  line-height: 2;
+  margin-bottom: 2rem;
 }
-
-figcaption {
-  font-size: 2rem;
-  padding-top: 10px;
-  font-weight: bold;
-}
-
-p {
-  max-width: 30ch;
-  margin: 2rem;
-  font-size: 15px;
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-
-.icon a {
-  margin-left: 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: magenta;
-  font-weight: bold;
-}
-
-.icon a:hover {
-  color: rebeccapurple;
-}
-
-/**********footer***********/
-
 
 footer {
   display: flex;
@@ -137,7 +96,7 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   background-color: #FEFFD0;
-  height: 30vh;
+  height: 20vh;
 } 
 
 footer ul {

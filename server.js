@@ -2,16 +2,7 @@
 // Install modules
 const express = require('express')
 const app = express()
-//const dogImages = require('./data/dog-images')
-const dogImages = require('./models/dog-images')
-const groupMembers = require('./models/members')
-//const subscribers = require('./models/subscirbers')
-//const dogImages = require('./models/dog-images')
-//const groupMembers = require('./models/members')
-//const subscribers = require('./models/subscribers')
-
 const dotenv = require('dotenv').config()
-
 
 //initialize API public folder
 app.use(express.static('public'))
@@ -23,8 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 
 const api = require('./routes/api.js')
 app.use('/api', api)
-
-
 
 /****************/
 // Handle 404
@@ -38,8 +27,7 @@ app.use(function(req, res) {
   } else {  
     // else send HTML 404
     res.status(404)
-    res.redirect("./404.html")    
-    res.send('<h1>404: File Not Found</h1>')
+    res.redirect("./404.html")  
   }
 });
 
