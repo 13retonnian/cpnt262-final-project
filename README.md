@@ -45,8 +45,11 @@ Fancy Feature: Dog toy recommender.
 16. [404 Dog Photo](https://www.pexels.com/photo/smart-dog-in-eyeglasses-resting-on-cozy-bed-at-home-5255277/) by [Samson Katt](https://www.pexels.com/@samson-katt) from [Pexels](https://www.pexels.com/)
 17. [Github Icon](https://www.flaticon.com/premium-icon/github_2175377?term=github&page=1&position=5&page=1&position=5&related_id=2175377&origin=search) by [High Quality Icons](https://www.flaticon.com/authors/hight-quality-icons) by [Flaticon](https://www.flaticon.com/)
 
-- [Query Stings and Params](https://stackabuse.com/get-query-strings-and-parameters-in-express-js/)
+- [namor](https://github.com/acidtone/namor)
 - attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
+
+### Problems during assignment:
+- couldn't figure out how to get query argument from address bar for item.html but found it on namor
 
 ### Reference
 
