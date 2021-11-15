@@ -11,7 +11,6 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #D0F7FF;
-  padding: 1rem;
 }
 
 .logo {
@@ -23,6 +22,26 @@ header {
 
 h1 {
   font-size: 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/homepage.jpg);
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 5rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  transition-delay: 1s;
 }
 
 nav ul {
@@ -48,6 +67,7 @@ nav a {
 nav li:hover {
   background-color: #FEFFD0;
 }
+
 /***********content**********/
 
 
@@ -68,7 +88,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  margin: 3rem;
   flex-wrap: wrap;
 }
 
@@ -133,20 +153,33 @@ p {
   color: rebeccapurple;
 }
 
-/**********footer***********/
-
+/*footer*/
 
 footer {
+  padding: 2rem;
+  background-color: #FEFFD0;
+} 
+
+footer ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #FEFFD0;
-  height: 30vh;
-} 
-
-footer ul {
   list-style: none;
-  margin: 2rem;
 }
 
+footer li {
+  padding: 5px;
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

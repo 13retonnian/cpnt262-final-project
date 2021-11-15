@@ -11,7 +11,7 @@ fetch('/api/items')
       return response.json()
     }) 
     .then(function(data){
-        console.log(data)
+        //console.log(data)
     
     for(let i = 0; i < Number(data.length); i++){
       output += `
