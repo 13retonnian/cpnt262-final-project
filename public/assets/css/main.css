@@ -77,13 +77,47 @@ main {
   flex-wrap: wrap;
 }
 
-section{
+section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 120ch;
+  max-width: 150ch;
   margin: 5rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgb(167, 167, 167);
+  border-radius: 20px;
+}
+
+.feature a {
+  text-decoration: none;
+  background-color: aquamarine;
+  font-size: 2rem;
+  color: gray;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.feature img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.feature a:hover {
+  background-color: pink;
+}
+
+.feature p {
+  font-weight: bold;
 }
 
 article {
