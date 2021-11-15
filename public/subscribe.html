@@ -7,6 +7,7 @@
   <title>Join Fantastic</title>
   <link rel="stylesheet" href="assets/css/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
   <header>
@@ -48,15 +49,15 @@
     <h2 class="animate__animated animate__shakeY">Subscribe Now!</h2>
     <!-- TODO: Create a form that asks for `name` and `email address` -->
     <!-- create a submit button -->
-    <form action="/api/subscribers" method="post">
+    <form id="subscribeForm" action="/api/subscribers" method="post">
       <fieldset>
         <legend>
           Please enter your info to subscribe to our spam I mean mailing list:
         </legend>
         <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+        <input type="text" id="userName" name="name" required>
         <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required> 
+        <input type="text" id="userEmail" name="email" required> 
         <input class="button" type="submit" value="Subscribe">
       </fieldset>
     </form>
