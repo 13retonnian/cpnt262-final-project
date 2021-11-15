@@ -24,26 +24,6 @@ h1 {
   font-size: 3rem;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/homepage.jpg);
-  height: 60vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h2 {
-  font-size: 5rem;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  transition-delay: 1s;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -68,28 +48,33 @@ nav li:hover {
   background-color: #FEFFD0;
 }
 
+/*content*/
+ 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
 
-/*******************content**********************/
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 120ch;
-  margin: auto;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.result-selection {
+  border: 1px solid black;
   padding: 2rem;
 }
 
-h3 {
-  font-size: 25px;
-  margin: 30px;
-}
-
-section p {
-  line-height: 2;
-  margin-bottom: 2rem;
-}
+/*footer*/
 
 footer {
   display: flex;

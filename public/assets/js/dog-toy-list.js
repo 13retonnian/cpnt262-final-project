@@ -248,6 +248,5 @@ const dogToys = [
     size: "large",
     chewiness: "rare",
     age: "old",
-  }]
-
-//module.exports = dogToys
+  }
+]

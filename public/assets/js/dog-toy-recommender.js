@@ -15,10 +15,6 @@
 // See dog-toy-list.js for the complete list of dog toys.
 
 //initialize variables
-
-//const dogToys = require("./dog-toy-list")
-//const express = require(express)
-
 let choiceList = []
 let resultSection = document.querySelector(".result-section")
 let size = "medium"
@@ -58,6 +54,10 @@ const priceFindFunction = function(item) {
 }
 
 const addToysToChoiceList = function() {  
+  choiceList.push(dogToys.find(sizeFindFunction))
+  choiceList.push(dogToys.find(ageFindFunction))
+  choiceList.push(dogToys.find(chewinessFindFunction))
+  choiceList.push(dogToys.find(priceFindFunction))
   // each of these puts more toys into the choice list based on what matches. Duplicates are allowed.
   // dogToys. filter gets an array of dog toy matches then the for loop puts them into the choice list with push.
   const specificSizeToys = dogToys.filter(sizeFindFunction)
