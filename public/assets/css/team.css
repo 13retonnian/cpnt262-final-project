@@ -25,17 +25,6 @@ h1 {
   font-size: 3rem;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/homepage.jpg);
-  height: 60vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +51,19 @@ nav li:hover {
 /***********content**********/
 
 
+h2 {
+  font-size: 7rem;
+  text-align: center;
+  margin: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  transition-duration: 2s;
+  transition-delay: 3s;
+  background: linear-gradient(rgb(85, 16, 204), rgb(69, 13, 13));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -82,11 +84,14 @@ section .card {
   border: 1px solid rgb(165, 165, 165);
   margin: 3rem;
   border-radius: 20px;
+  background: linear-gradient(white, gray, rgb(32, 32, 93), rgb(54, 2, 2));
 }
 
 section .card:hover {
   box-shadow: 2px 2px 4px black;
-  transition-duration: s;
+  transition-duration: 3s;
+  color: rgb(3, 54, 5);
+  background: linear-gradient(rgb(3, 54, 5),rgb(153, 236, 70), gray, white);
 }
 
 figure img {

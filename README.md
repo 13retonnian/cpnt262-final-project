@@ -45,13 +45,16 @@ Fancy Feature: Dog toy recommender.
 16. [404 Dog Photo](https://www.pexels.com/photo/smart-dog-in-eyeglasses-resting-on-cozy-bed-at-home-5255277/) by [Samson Katt](https://www.pexels.com/@samson-katt) from [Pexels](https://www.pexels.com/)
 17. [Github Icon](https://www.flaticon.com/premium-icon/github_2175377?term=github&page=1&position=5&page=1&position=5&related_id=2175377&origin=search) by [High Quality Icons](https://www.flaticon.com/authors/hight-quality-icons) by [Flaticon](https://www.flaticon.com/)
 18. [Pet Store Photo](https://unsplash.com/photos/naIUWj9HoZg) by [Komarov Egor](https://unsplash.com/@komarov) from [Unsplash](https://unsplash.com/).
+19. [Form background](https://pixabay.com/illustrations/paws-paw-prints-footprint-pattern-6757808/) by [Natiqjavid](https://pixabay.com/users/natiqjavid-1602367/) from [Pixabay](https://pixabay.com/)
 
 - [namor](https://github.com/acidtone/namor)
+- [form data](https://github.com/sait-wbdv/in-class/blob/main/cpnt262/10-13-forms-class-list/02-prevent-default/js/adding-machine.js)
 - attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 
 ### Problems during assignment:
 - couldn't figure out how to get query argument from address bar for item.html but found it on namor
 - had to change heroku github from fork to main
+- didn't put form options inside select opener and closer took a while to figure out
 
 ### Reference
 

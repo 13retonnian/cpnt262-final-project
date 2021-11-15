@@ -86,12 +86,6 @@ form {
   margin-bottom: 5rem;
 }
 
-legend {
-  font-size: 1.5rem;
-  background-color: white;
-  border-radius: 10px;
-}
-
 fieldset {
   display: flex;
   justify-content: center;
@@ -105,24 +99,16 @@ fieldset {
   background-color: white;
 }
 
-label {
-  font-size: 15px;
-  padding: 5px;
-}
-
-input {
-  height: 3rem;
-  width: 25rem;
-  font-size: 12px;
-  border-radius: 20px;
+h3 {
+    font-size: 3rem;
   text-align: center;
-  background-color: rgb(208, 208, 208);
-  padding: 5px;
-}
-
-.button {
-  width: 6rem;
-  margin-top: 3rem;
+  margin: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: greenyellow;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(90, 89, 89);
+  letter-spacing: 10px;
+  animation-iteration-count: 3;
 }
 
 /**********footer***********/

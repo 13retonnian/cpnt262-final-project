@@ -16,7 +16,7 @@ fetch('/api/members')
     for(let i = 0; i < Number(data.length); i++){
       output += `
 
-      <div class="card">
+      <div class="card animate__animated animate__bounceInLeft">
         <figure>
           <img src="assets/images/team-pics/${data[i].profilePic}">
           <figcaption>${data[i].fullName}</figcaption>
