@@ -6,6 +6,15 @@
 + Deadline: November 15, 2021 at 11:59 pm
 + Course Mark: 40%
 
+## Welcome to Fantastic Dogs Website!
+- This is a website for dog enthusiasts!
+
+## Random Dog Toy Recommender
+
+- This is a fun random toy recommendation program.
+- Simply enter your dogs characteristics and an average price range click submit.
+- The recommender will then figure out which toys are suitable for your dog and make a random selection.
+
 ## About the project
 
 - **Title of Company:** Fantastic Dogs
