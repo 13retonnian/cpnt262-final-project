@@ -1,5 +1,11 @@
 // Coded by Christopher Barber, Jesse Thadi, Icah Vega, Alex Uk with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 
+// Welcome to the Random Dog Toy Recommender.
+// This application takes 3 choices from 4 sections from the user.
+// The user's choices will decide which dog toys will go into a choice list.
+// The application will then make a random recommendation from the choice list.
+// Duplicates are allowed so if one toy meets all of the choices then there is a high chance of it being recommended.
+
 //initialize variables
 
 //const dogToys = require("./dog-toy-list")
