@@ -54,6 +54,7 @@ Fancy Feature: Dog toy recommender.
 ### Problems during assignment:
 - couldn't figure out how to get query argument from address bar for item.html but found it on namor
 - had to change heroku github from fork to main
+- didn't put form options inside select opener and closer took a while to figure out
 
 ### Reference
 
