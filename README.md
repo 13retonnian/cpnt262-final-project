@@ -48,6 +48,7 @@ Fancy Feature: Dog toy recommender.
 19. [Form background](https://pixabay.com/illustrations/paws-paw-prints-footprint-pattern-6757808/) by [Natiqjavid](https://pixabay.com/users/natiqjavid-1602367/) from [Pixabay](https://pixabay.com/)
 
 - [namor](https://github.com/acidtone/namor)
+- [form data](https://github.com/sait-wbdv/in-class/blob/main/cpnt262/10-13-forms-class-list/02-prevent-default/js/adding-machine.js)
 - attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 
 ### Problems during assignment:
