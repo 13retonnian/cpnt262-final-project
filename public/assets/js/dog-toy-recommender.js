@@ -1,10 +1,18 @@
 // Coded by Christopher Barber, Jesse Thadi, Icah Vega, Alex Uk with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
-
+/*******************************************/
 // Welcome to the Random Dog Toy Recommender.
+/*******************************************/
 // This application takes 3 choices from 4 sections from the user.
+// These include size, age, dog chewing habits and price.
+// Each of these sections has 3 choices.
+// For size there is small, medium, large.
+// For age the user picks an age and it divides into young, middle and old age.
+// For dog chewing habits there is rare, regular and avid chewer.
+// For price there is cheap, medium and expensive
 // The user's choices will decide which dog toys will go into a choice list.
 // The application will then make a random recommendation from the choice list.
 // Duplicates are allowed so if one toy meets all of the choices then there is a high chance of it being recommended.
+// See dog-toy-list.js for the complete list of dog toys.
 
 //initialize variables
 
@@ -50,6 +58,8 @@ const priceFindFunction = function(item) {
 }
 
 const addToysToChoiceList = function() {  
+  // each of these puts more toys into the choice list based on what matches. Duplicates are allowed.
+  // dogToys. filter gets an array of dog toy matches then the for loop puts them into the choice list with push.
   const specificSizeToys = dogToys.filter(sizeFindFunction)
   for(let i = 0; i < specificSizeToys.length; i++) {
     choiceList.push(specificSizeToys[i])
