@@ -89,26 +89,41 @@ router.get('/members', async (req, res) => {
 
 
 //
-// [API Path: /api/subscribers] Add a subscriber to the database
+// [API Path: /api/subscribe] Add a subscriber to the database
 //
-router.post('/subscribers', async (req, res) => {  
+router.post('/subscribe/:name/:email', async (req, res) => {  
   
-  console.log('[Posted]  /api/subscribers - start');
+  console.log('[Posted]  /api/subscribe - start');
   try {
-  
-    const subscriber = new Subscriber(req.body)
-    await subscriber.save()
-  
-    // Send the request to the success page
-    res.redirect('/success.html')
 
+    console.log(req.params.email);
+
+    // Check for duplication
+    let subscriber = await Subscriber.findOne({email: req.params.email})
+
+    // If the subscriber exists
+    if(subscriber){
+
+      res.send({status: 'FAIL', error: 'DUPLICATE_EMAIL'})
+    }
+    // If not exist
+    else{
+
+      subscriber = new Subscriber(req.params)
+      await subscriber.save()
+  
+      // Send the request to the success page
+      //res.redirect('/success.html')
+      res.send({status: 'SUCCESS'})
+    }
+    
   } catch(error) {
     console.log(error)
 
     // Send the request to the failure page
     res.redirect('/fail.html')    
   }
-  console.log('[Posted]  /api/subscribers - end');
+  console.log('[Posted]  /api/subscribe - end');
 })
 
 //

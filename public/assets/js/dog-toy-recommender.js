@@ -53,25 +53,24 @@ const priceFindFunction = function(item) {
   return item.price === price
 }
 
-const addToysToChoiceList = function() {  
-  choiceList.push(dogToys.find(sizeFindFunction))
-  choiceList.push(dogToys.find(ageFindFunction))
-  choiceList.push(dogToys.find(chewinessFindFunction))
-  choiceList.push(dogToys.find(priceFindFunction))
+const addToysToChoiceList = function() {    
   // each of these puts more toys into the choice list based on what matches. Duplicates are allowed.
   // dogToys. filter gets an array of dog toy matches then the for loop puts them into the choice list with push.
   const specificSizeToys = dogToys.filter(sizeFindFunction)
   for(let i = 0; i < specificSizeToys.length; i++) {
     choiceList.push(specificSizeToys[i])
   }
+
   const specificAgeToys = dogToys.filter(ageFindFunction)
   for(let i = 0; i < specificAgeToys.length; i++) {
     choiceList.push(specificAgeToys[i])
   }
+
   const specificChewinessToys = dogToys.filter(chewinessFindFunction)
   for(let i = 0; i < specificChewinessToys.length; i++) {
     choiceList.push(specificChewinessToys[i])
   }
+
   const specificPriceToys = dogToys.filter(priceFindFunction)
   for(let i = 0; i < specificPriceToys.length; i++) {
     choiceList.push(specificPriceToys[i])
