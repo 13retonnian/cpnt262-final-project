@@ -37,21 +37,125 @@ const dogToys = [
   "bullystick",
   "benebone",
   "plastic toy",
-  "blanket",
-  "dog chew socks",
-  "sock with tennis ball inside",
-  "squeaky rubber toy",
-  "stuffed animal with squeaky ball inside",
-  "bouncy ball",
-  "frisbee",
-  "ball throwing stick",
-  "toy mouse",
-  "toy car",
-  "doll toy",
-  "dog house",
-  "dog waterfall",
-  "dog fish pond",
-  "dog skateboard"]
+  {
+    name: "blanket",
+    price: "medium",
+    size: "medium",
+    chewiness: "rare",
+    age: "old",
+  },
+
+  {
+    name: "dog chew socks",
+    price: "cheap",
+    size: "small",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "sock with tennis ball inside",
+    price: "cheap",
+    size: "small",
+    chewiness: "avid",
+    age: "young",
+  },
+
+  {
+    name: "squeaky rubber toy",
+    price: "cheap",
+    size: "small",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "stuffed animal with squeaky ball inside",
+    price: "medium",
+    size: "medium",
+    chewiness: "avid",
+    age: "young",
+  },
+
+  {
+    name: "bouncy ball",
+    price: "cheap",
+    size: "medium",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "frisbee",
+    price: "cheap",
+    size: "medium",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "ball throwing stick",
+    price: "cheap",
+    size: "medium",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "toy mouse",
+    price: "medium",
+    size: "small",
+    chewiness: "regular",
+    age: "medium",
+  },
+
+  {
+    name: "toy car",
+    price: "medium",
+    size: "medium",
+    chewiness: "rare",
+    age: "old",
+  },
+
+  {
+    name: "doll toy",
+    price: "medium",
+    size: "medium",
+    chewiness: "regular",
+    age: "old",
+  },
+
+  {
+    name: "dog house",
+    price: "expensive",
+    size: "large",
+    chewiness: "rare",
+    age: "old",
+  },
+
+  {
+    name: "dog waterfall",
+    price: "expensive",
+    size: "large",
+    chewiness: "rare",
+    age: "old",
+  },
+  
+  {
+    name: "dog fish pond",
+    price: "expensive",
+    size: "large",
+    chewiness: "rare",
+    age: "old",
+  },
+
+  {
+    name: "dog skateboard",
+    price: "expensive",
+    size: "large",
+    chewiness: "rare",
+    age: "old",
+  }]
 //initialize variables
 let choiceList = []
 let resultSection = document.querySelector(".result-section")
