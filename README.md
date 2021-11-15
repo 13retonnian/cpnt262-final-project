@@ -60,7 +60,7 @@
 19. [Form background](https://pixabay.com/illustrations/paws-paw-prints-footprint-pattern-6757808/) by [Natiqjavid](https://pixabay.com/users/natiqjavid-1602367/) from [Pixabay](https://pixabay.com/)
 20. [Toy Recommender Photo](https://illlustrations.co/static/3f9ec0ef2046891d87dcd9a25db1be3a/day67-dog.png) by [Realvjy](https://www.buymeacoffee.com/realvjy) from [illustrations.io](https://illlustrations.co/)
 21. [Toy recommender background](https://pixabay.com/illustrations/speech-bubble-speech-balloon-6109031/) by [Anonymous](https://pixabay.com/users/7089643-7089643/) from [Pixabay](https://pixabay.com/).
-22. [Toy recommender bubble](https://pixabay.com/vectors/speech-bubble-blank-cloud-message-25902/) by [Clker-Free-Vector-Images](https://pixabay.com/users/clker-free-vector-images-3736/) from [Pixabay](https://pixabay.com/).
+22. [Toy recommender bubble](https://pixabay.com/vectors/speech-bubble-speech-balloon-balloon-145978/) by [OpenClipart-Vectors](https://pixabay.com/users/openclipart-vectors-30363/) from [Pixabay](https://pixabay.com/).
 23. [Toy recommender font: Gluten](https://fonts.google.com/specimen/Gluten?category=Display) from [Google Fonts](https://fonts.google.com/?category=Display)
 
 - [namor](https://github.com/acidtone/namor)
