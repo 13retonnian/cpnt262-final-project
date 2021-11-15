@@ -23,7 +23,7 @@ const form = document.querySelector('form');
 const setCustomerChoices = function() {
   size = form.dogSize.value
   age = form.dogAge.value
-  if(age < 4) {
+  if(age < 3) {
     age = "young"
   }
   else if(age < 8) {
@@ -70,12 +70,11 @@ const addToysToChoiceList = function() {
 const handleSubmit = function(event) {
   event.preventDefault() 
   choiceList = []
-  //get the form inputs
+  //get the form inputs loaded into variables
   setCustomerChoices() 
-  //find the toys that match and add them to choice list 
+  //find the toys that match each choice and add them to choice list 
   addToysToChoiceList()
-  //randomize which toy is selected from the choice list and output to page
-  console.log(choiceList)
+  //randomize which toy is selected from the choice list and output to page  
   const randomNumber = Math.floor((Math.random() * choiceList.length)) 
   resultSection.innerHTML = `${choiceList[randomNumber].name}`
 }
