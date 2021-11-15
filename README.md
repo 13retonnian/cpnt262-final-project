@@ -8,8 +8,8 @@
 
 ## About the project
 
-Title of Company: Fantastic Dogs
-Fancy Feature: Dog toy recommender.
+- **Title of Company:** Fantastic Dogs
+- **Fancy Feature:** Dog toy recommender.
 
 ### :pushpin: Instructions
 
