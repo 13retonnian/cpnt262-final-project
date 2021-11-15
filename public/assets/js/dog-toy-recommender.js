@@ -14,7 +14,13 @@ const dogToys = [
     chewiness: "avid",
     age: "young" 
   },
-  "rubber chicken",
+  { 
+    name:"rubber chicken",
+    price:"cheap",
+    size:"small",
+    chewiness: "avid",
+    age: "young"
+  },
   "squeaky toy",
   "tennis ball",
   "rubber ball",
