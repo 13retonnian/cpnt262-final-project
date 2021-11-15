@@ -8,7 +8,10 @@
 
 ## About the project
 
+Title of Company: Fantastic Dogs
 Fancy Feature: Dog toy recommender.
+
+### :pushpin: Instructions
 
 ### Group Members
 
@@ -52,9 +55,10 @@ Fancy Feature: Dog toy recommender.
 - attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
 
 ### Problems during assignment:
-- couldn't figure out how to get query argument from address bar for item.html but found it on namor
-- had to change heroku github from fork to main
-- didn't put form options inside select opener and closer took a while to figure out
+
+- couldn't figure out how to get query argument from address bar for item.html but found it on namor.
+- had to change heroku github from fork to main.
+- didn't put form options inside select opener and closer took a while to figure out.
 
 ### Reference
 
