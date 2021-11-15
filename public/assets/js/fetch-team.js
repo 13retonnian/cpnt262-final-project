@@ -34,5 +34,5 @@ fetch('/api/members')
       document.querySelector('section').innerHTML = output;
     })
       .catch(function(err){
-        //console.log(err);
+        console.log(err);
     })

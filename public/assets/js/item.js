@@ -33,6 +33,6 @@ if (urlParams.get('id') !== null) {
       document.querySelector('section').innerHTML = output;
     })
     .catch(function(err){
-      //console.log(err);
+      console.log(err);
     })
   }
