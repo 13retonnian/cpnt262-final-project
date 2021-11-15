@@ -1,5 +1,5 @@
 //install modules
-const mongoose = require('./db')
+const mongoose = require('mongoose');
 
 /*****************/
 /* Define Schema */
