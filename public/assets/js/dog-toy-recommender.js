@@ -271,6 +271,8 @@ const dogToys = [
     chewiness: "rare",
     age: "old",
   }]
+
+  
 //initialize variables
 let choiceList = []
 let resultSection = document.querySelector(".result-section")
@@ -314,7 +316,7 @@ const addToysToChoiceList = function() {
   choiceList.push(dogToys.find(sizeFindFunction))
   choiceList.push(dogToys.find(ageFindFunction))
   choiceList.push(dogToys.find(chewinessFindFunction))
-  choiceList.push(dogToys.find(priceFindFunction)) 
+  choiceList.push(dogToys.find(priceFindFunction))
 }
 const handleSubmit = function(event) {
   event.preventDefault() 
