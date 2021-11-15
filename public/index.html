@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fantastic Dogs</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- animate.css cdn-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- google fonts: berkshire swash-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <header>
@@ -44,23 +49,28 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <!-- TODO: Create a hero section with `homepage.jpg` -->
+
     <div class="hero">
       <h2 class="animate__animated animate__fadeInDownBig">One stop shop for your furry family.</h2>
     </div>
-    <!-- Create an article / section that describes the website -->    
+  <main>   
     <section>
       <h3>Our story</h3>
         <p>We are Fantastic Dogs. We are dog parents’ best friend and a one stop shop for the furry member of their family. We are based in Calgary, Alberta.</p>
         <p>Our story started with four people who went to school together and shared their fondness of dogs, they volunteered together in shelters and did a lot of studying with dog behaviors and nutrition. One day, the founders met in a coffee shop to do their usual hang out and joked about opening a shop that became a reality with the help of their friends and family. We could not have done it without everyone’s help.</p>
         <p>Our business specializes in making your dogs feel special, we offer high quality and nutritious treats, some of the treats we have in shop might be familiar to you, but we also have treats that we sourced from Canadian businesses. We do our best to support the local businesses just like ours because we believe that sometimes the small businesses have the biggest heart and the strongest passion to provide the best life for our furry family members.</p>
-      <h4>The Store</h4>
-        <img src="assets/images/pet-store.jpg" alt="Pet store with dog accessories.">
-        <p>From our website to our store, we decided that it should scream DOG! As we all know (dog lovers), dogs only see hues of blue and yellow, we want every dog to be excited when they come into our store, we have experienced helpers in our store that knows a lot about food and treats, say hi to them when you come in! We offer toys, food, variety of treats, from soft chews to bones, we also offer accessories for your dogs, we live in a place where winter can be harsh, we offer coats and boots, yes for dogs! We also offer vitamins and meal mixers for different stages of life. We are excited to help you give your dogs the best life, see you on your visit!</p>
-        <p><strong>-	Fantastic Four Dogs (Alex, Chris, Jesse and Icah)</strong></p>
+        <div class="feature">
+          <p>Can't decide on a toy to shop? Try our...</p>
+          <img src="assets/images/dog-illustration.png" alt="Happy Dog illustration">
+          <a class="animate__animated animate__tada" href="dog-toy-recommender.html">Toy Recommender!</a>
+        </div>
     </section>
-
+    <article>
+        <h4>The Store</h4>
+          <img src="assets/images/pet-store.jpg" alt="Pet store with dog accessories.">
+          <p>From our website to our store, we decided that it should scream DOG! As we all know (dog lovers), dogs only see hues of blue and yellow, we want every dog to be excited when they come into our store, we have experienced helpers in our store that knows a lot about food and treats, say hi to them when you come in! We offer toys, food, variety of treats, from soft chews to bones, we also offer accessories for your dogs, we live in a place where winter can be harsh, we offer coats and boots, yes for dogs! We also offer vitamins and meal mixers for different stages of life. We are excited to help you give your dogs the best life, see you on your visit!</p>
+          <p><strong>-	Fantastic Four Dogs (Alex, Chris, Jesse and Icah)</strong></p>
+    </article>  
   </main>
   <footer>
     <ul>
@@ -69,7 +79,9 @@
       <li>Facebook: @FantasticDogs</li>
       <li>Instagram: @FantasticDogs</li>
     </ul>
+    <div class="license">      
       <p>@ Copyright 2021 FantasticDogs  |  MIT License</p>
+    </div>
   </footer>
 </body>
 </html>

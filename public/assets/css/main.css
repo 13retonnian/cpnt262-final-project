@@ -11,7 +11,6 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #D0F7FF;
-  padding: 1rem;
 }
 
 .logo {
@@ -71,50 +70,115 @@ nav li:hover {
 
 /*******************content**********************/
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 150ch;
+  margin: 5rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgb(167, 167, 167);
+  border-radius: 20px;
+}
+
+.feature a {
+  text-decoration: none;
+  background-color: aquamarine;
+  font-size: 2rem;
+  color: gray;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.feature img {
+  height: 20rem;
+  width: 20rem;
+}
+
+.feature a:hover {
+  background-color: pink;
+}
+
+.feature p {
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 120ch;
-  margin: auto;
-  padding: 2rem;
+  margin: 5rem;
 }
 
 h3, h4 {
-  font-size: 40px;
+  font-size: 6rem;
   margin: 30px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 20px;
-  color: #fbfac2;
-  text-shadow: 1px 1px 6px #2fdcff;
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 10px;
+  color: #414141;
 }
 
-section p {
+section p, article p {
   line-height: 2;
   margin: 2rem;
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
 }
 
-section img {
+article img {
   height: 40rem;
   width: 60rem;
   margin: 2rem;
   border-radius: 10px;
 }
 
+/*footer*/
+
 footer {
+  padding: 2rem;
+  background-color: #FEFFD0;
+} 
+
+footer ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #FEFFD0;
-  height: 20vh;
-} 
-
-footer ul {
   list-style: none;
-  margin: 2rem;
+}
+
+footer li {
+  padding: 5px;
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 

@@ -30,7 +30,7 @@ fetch('/api/members')
       </div>
       `
     }
-    console.log(output)
+    //console.log(output)
       document.querySelector('section').innerHTML = output;
     })
       .catch(function(err){

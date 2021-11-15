@@ -117,8 +117,8 @@ router.post('/subscribers', async (req, res) => {
 router.get('/subscribers' , async (req, res) => {  
 
   console.log('[Called]  /api/subscribers - start');
-  try{
   
+  try{
     const subscribers = await Subscriber.find()
     if(!subscribers){
       throw new Error();

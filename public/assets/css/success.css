@@ -11,7 +11,6 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: #D0F7FF;
-  padding: 1rem;
 }
 
 .logo {
@@ -34,6 +33,15 @@ h1 {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h2 {
+  font-size: 5rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  transition-delay: 1s;
 }
 
 nav ul {
@@ -59,6 +67,7 @@ nav a {
 nav li:hover {
   background-color: #FEFFD0;
 }
+
 /***********content**********/
 
 h2 {
@@ -80,6 +89,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   background-image: url(https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_1280.png);
+  background-size: cover;
 }
 
 form {
@@ -111,24 +121,33 @@ h3 {
   animation-iteration-count: 3;
 }
 
-/**********footer***********/
-
+/*footer*/
 
 footer {
+  padding: 2rem;
+  background-color: #FEFFD0;
+} 
+
+footer ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #FEFFD0;
-  height: 20vh;
-} 
-
-footer ul {
   list-style: none;
-  margin: 2rem;
 }
 
-input, label {
-  display: block;
+footer li {
+  padding: 5px;
+  font-size: 15px;
 }
 
+footer p {
+  text-align: center;
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
