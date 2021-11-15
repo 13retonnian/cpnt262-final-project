@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D0F7FF;
+  padding: 1rem;
+}
+
+.logo {
+  height: 7rem;
+  width: 9rem;
+  animation-iteration-count: 4;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/homepage.jpg);
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+nav li {
+  margin: 1rem 4rem 1rem 4rem;
+  list-style: none;
+  background-color: #f3ee6a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+nav li:hover {
+  background-color: #FEFFD0;
+}
+/***********content**********/
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: greenyellow;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(90, 89, 89);
+  letter-spacing: 10px;
+  animation-iteration-count: 3;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_1280.png);
+}
+
+form {
+  margin-bottom: 5rem;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 5px 30px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: greenyellow;
+  border-width: 5px;
+  background-color: white;
+}
+
+h3 {
+    font-size: 3rem;
+  text-align: center;
+  margin: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: greenyellow;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(90, 89, 89);
+  letter-spacing: 10px;
+  animation-iteration-count: 3;
+}
+
+/**********footer***********/
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #FEFFD0;
+  height: 20vh;
+} 
+
+footer ul {
+  list-style: none;
+  margin: 2rem;
+}
+
+input, label {
+  display: block;
+}
+
