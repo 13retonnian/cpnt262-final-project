@@ -3,7 +3,7 @@ const v = "Hi! I'm a strict mode script!";
 
 let output ='';
 
-fetch('/api/dog-images')
+fetch('/api/items')
   .then(function(response){
     if (!response.ok) {
       throw new Error('Not 200 OK');
@@ -22,6 +22,6 @@ fetch('/api/dog-images')
     }
       document.querySelector('section').innerHTML = output;
     })
-      .catch(function(err){
-        //console.log(err);
+    .catch(function(err){
+        console.log(err);
     })

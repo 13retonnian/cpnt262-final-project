@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 /* Define Schema */
 /*****************/
 
-const dogImagesSchema = new mongoose.Schema({
+const itemSchema = new mongoose.Schema({
   id: Number,
   name: String,
   description: String,
@@ -18,4 +18,4 @@ const dogImagesSchema = new mongoose.Schema({
 /* Compile Model */
 /*****************/
 
-module.exports = mongoose.model('Dog-Image', dogImagesSchema)
+module.exports = mongoose.model('Dog-Image', itemSchema)
