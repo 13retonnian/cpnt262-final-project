@@ -48,25 +48,30 @@ const dogToys = [
   "dog skateboard"]
 
 let choiceList = ``
-let price = "medium"
+
 let size = "regular"
-let chewiness = "medium"
 let age = "middle"
-const submitButton = document.querySelector(".submit-button")
-const resultSection = document.querySelector(".result-section")
+let chewiness = "medium"
+let price = "medium"
+
 const form = document.querySelector('form');
 
-const setCustomerChoices = function(){
+const setCustomerChoices = function() {
   size = form.dogSize.value
   age = form.dogAge.value
   chewiness= form.dogChewer.value
   price = form.priceRange.value
 }
 
+const addToysToChoiceList = function() {
+  
+  console.log(dogToys.findAll({size: size}))
+}
 const handleSubmit = function(event) {
   event.preventDefault() 
 
   setCustomerChoices()  
+  addToysToChoiceList()
   const randomNumber = Math.floor((Math.random() * dogToys.length))  
   resultSection.innerHTML = `${dogToys[randomNumber]}`
 }
