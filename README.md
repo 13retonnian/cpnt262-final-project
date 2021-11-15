@@ -12,7 +12,7 @@
 ## Random Dog Toy Recommender
 
 - This is a fun random toy recommendation program.
-- Simply enter your dogs characteristics and an average price range click submit.
+- Simply enter your dogs characteristics and an average price range and click submit.
 - The recommender will then figure out which toys are suitable for your dog and make a random selection.
 
 ## About the project
@@ -69,6 +69,8 @@
 - couldn't figure out how to get query argument from address bar for item.html but found it on namor.
 - had to change heroku github from fork to main.
 - didn't put form options inside select opener and closer took a while to figure out.
+- kept getting CORS error.
+- kept getting header error. Fixed it by removing the send after a redirect.
 
 ### Reference
 
