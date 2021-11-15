@@ -16,7 +16,6 @@ header {
 .logo {
   height: 7rem;
   width: 9rem;
-  animation-iteration-count: 4;
   margin: 1rem;
 }
 
@@ -33,15 +32,6 @@ h1 {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-h2 {
-  font-size: 5rem;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  transition-delay: 1s;
 }
 
 nav ul {
