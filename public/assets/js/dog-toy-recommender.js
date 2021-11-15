@@ -21,6 +21,134 @@ const dogToys = [
     chewiness: "avid",
     age: "young"
   },
+  
+  {
+    name: "squeaky toy",
+    price: "cheap",
+    size: "medium",
+    chewiness: "avid",
+    age: "young"
+  },
+  {
+    name: "tennis ball",
+    price: "cheap",
+    size: "small",
+    chewiness: "regular",
+    age: "middle"
+  },
+  {
+    name: "rubber ball",
+    price: "medium",
+    size: "small",
+    chewiness: "regular",
+    age: "middle"
+  },
+  {
+    name: "rope toy",
+    price: "medium",
+    size: "large",
+    chewiness: "avid",
+    age: "old"
+  },
+  {
+    name: "big ball toy",
+    price: "medium",
+    size: "large",
+    chewiness: "avid",
+    age: "old"
+  },
+  {
+    name: "treat dispensing toy",
+    price: "expensive",
+    size: "large",
+    chewiness: "rare",
+    age: "old"
+  },
+  {
+    name: "pig ear",
+    price: "cheap",
+    size: "medium",
+    chewiness: "avid",
+    age: "middle"
+  },
+  {
+    name: "dog bone",
+    price: "medium",
+    size: "medium",
+    chewiness: "regular",
+    age: "middle"
+  },
+  {
+    name: "plastic bone",
+    price: "cheap",
+    size: "medium",
+    chewiness: "avid",
+    age: "middle"
+  },
+  {
+    name: "tennis ball rope toy",
+    price: "middle",
+    size: "large",
+    chewiness: "avid",
+    age: "middle"
+  },
+  {
+    name: "tennis ball launcher",
+    price: "expensive",
+    size: "large",
+    chewiness: "avid",
+    age: "middle"
+  },
+  {
+    name: "tooth cleaning toy",
+    price: "expensive",
+    size: "medium",
+    chewiness: "avid",
+    age: "old"
+  },
+  {
+    name: "tooth brush toy",
+    price: "expensive",
+    size: "medium",
+    chewiness: "avid",
+    age: "old"
+  },
+  {
+    name: "bullystick",
+    price: "expensive",
+    size: "large",
+    chewiness: "avid",
+    age: "old"
+  },
+  { 
+    name: "benebone",
+    price: "expensive",
+    size: "large",
+    chewiness: "avid",
+    age: "old"
+  },
+  {
+    name: "plastic toy",
+    price: "cheap",
+    size: "medium",
+    chewiness: "avid",
+    age: "middle"
+  },
+  "blanket",
+  "dog chew socks",
+  "sock with tennis ball inside",
+  "squeaky rubber toy",
+  "stuffed animal with squeaky ball inside",
+  "bouncy ball",
+  "frisbee",
+  "ball throwing stick",
+  "toy mouse",
+  "toy car",
+  "doll toy",
+  "dog house",
+  "dog waterfall",
+  "dog fish pond",
+  "dog skateboard"]
   "squeaky toy",
   "tennis ball",
   "rubber ball",
