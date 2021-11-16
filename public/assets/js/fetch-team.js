@@ -3,7 +3,7 @@ const v = "Hi! I'm a strict mode script!";
 
 let output ='';
 
-fetch('/api/members')
+fetch('https://fantastic-four-dogs.herokuapp.com/api/members')
   .then(function(response){
     if (!response.ok) {
       throw new Error('Not 200 OK');
@@ -15,7 +15,6 @@ fetch('/api/members')
     
     for(let i = 0; i < Number(data.length); i++){
       output += `
-
       <div class="card animate__animated animate__bounceInLeft">
         <figure>
           <img src="assets/images/team-pics/${data[i].profilePic}">
@@ -30,9 +29,9 @@ fetch('/api/members')
       </div>
       `
     }
-    //console.log(output)
+    console.log(output)
       document.querySelector('section').innerHTML = output;
     })
       .catch(function(err){
-        console.log(err);
+        //console.log(err);
     })
