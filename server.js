@@ -1,65 +1,41 @@
 // Coded by Christopher Barber, Jesse Thadi, Icah Vega, Alex Uk with attributions to SAIT Webdev including Tony Grimes and Ashlyn Knox code and classes
-
-//
-// Import modules
-//
-const config = require('dotenv').config()
-const connectDB = require('./db/connectDB')
+// Install modules
 const express = require('express')
 const app = express()
+const dotenv = require('dotenv').config()
 
-//
-// Set the root directory for static contents
-//
+//initialize API public folder
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
-
 
 /****************/
 //Handle Routes
 /****************/
+
 const api = require('./routes/api.js')
 app.use('/api', api)
-
 
 /****************/
 // Handle 404
 /****************/
-app.use((req, res) => {
+app.use(function(req, res) {
 
-  // Set 404 error code to the response
-  res.status(404)
-
+  // If path starts with `/api`, send JSON 404
   if (req.url.startsWith('/api')) {
-
-    // Send the JSON error response
-    res.send({Error: 'ERROR: 404 Not Found'})
-  } else {
-
-    // Redirect to the 404 error page
-    res.redirect('404.html');
+    res.status(404)
+    res.send({error: 'File Not Found'})
+  } else {  
+    // else send HTML 404
+    res.status(404)
+    res.redirect("./404.html")  
   }
 });
-
 
 /****************/
 // Start server
 /****************/
-try {
-  
-  // Make Connection to MongoDB 
-  connectDB().then(() => {
+const PORT = process.env.PORT || 3000;
 
-    console.log(`Starting the server...`);
-
-    // Run Application Server
-    const port = process.env.PORT || 3000;
-    
-    app.listen(port, function(){
-      console.log(`Listening on port ${port}`);
-    });
-  });
-
-}catch(error){
-  Console.log(error.stack);
-}
+app.listen(PORT, function(){
+  console.log(`Listening on port ${PORT}`);
+});

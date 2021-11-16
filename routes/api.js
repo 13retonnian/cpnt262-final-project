@@ -91,7 +91,7 @@ router.get('/members', async (req, res) => {
 //
 // [API Path: /api/subscribe] Add a subscriber to the database
 //
-router.post('/subscribe/:name/:email', async (req, res) => {  
+router.post('/subscribers', async (req, res) => {  
   
   console.log('[Posted]  /api/subscribe - start');
   try {
@@ -102,8 +102,7 @@ router.post('/subscribe/:name/:email', async (req, res) => {
     let subscriber = await Subscriber.findOne({email: req.params.email})
 
     // If the subscriber exists
-    if(subscriber){
-
+    if(subscriber){      
       res.send({status: 'FAIL', error: 'DUPLICATE_EMAIL'})
     }
     // If not exist

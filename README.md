@@ -72,8 +72,9 @@
 - couldn't figure out how to get query argument from address bar for item.html but found it on namor.
 - had to change heroku github from fork to main.
 - didn't put form options inside select opener and closer took a while to figure out.
-- kept getting CORS error.
+- kept getting CORS error. Alex fixed it with wizardry.
 - kept getting header error. Fixed it by removing the send after a redirect.
+- couldn't figure out how to export dog toy list to recommender so I included it into the html
 
 ### Reference
 

@@ -169,7 +169,6 @@ const dogToys = [
     chewiness: "avid",
     age: "young",
   },
-
   {
     name: "bouncy ball",
     price: "cheap",
@@ -177,7 +176,6 @@ const dogToys = [
     chewiness: "regular",
     age: "medium",
   },
-
   {
     name: "frisbee",
     price: "cheap",
@@ -185,7 +183,6 @@ const dogToys = [
     chewiness: "regular",
     age: "medium",
   },
-
   {
     name: "ball throwing stick",
     price: "cheap",
@@ -193,7 +190,6 @@ const dogToys = [
     chewiness: "regular",
     age: "medium",
   },
-
   {
     name: "toy mouse",
     price: "medium",
