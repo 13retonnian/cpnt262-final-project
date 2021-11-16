@@ -3,7 +3,7 @@ const v = "Hi! I'm a strict mode script!";
 
 let output ='';
 
-fetch('/api/dog-images')
+fetch('https://fantastic-four-dogs.herokuapp.com/api/dog-images')
   .then(function(response){
     if (!response.ok) {
       throw new Error('Not 200 OK');
