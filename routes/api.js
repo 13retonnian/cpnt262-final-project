@@ -96,7 +96,7 @@ router.post('/subscribers', async (req, res) => {
 
   } catch(err) {
     console.log(err)
-    res.send('/fail.html')    
+    res.redirect('/fail.html')    
   }
 })
 
