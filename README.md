@@ -15,6 +15,7 @@
 
 ### :pushpin: Instructions
 
+- Enable `Cors Everywhere` if you are in firefox, `Cors toggle` if you are in Chrome.
 - Home: https://fantastic-four-dogs.herokuapp.com/
 - Gallery: https://fantastic-four-dogs.herokuapp.com/api/dog-images
 - Gallery Items: https://fantastic-four-dogs.herokuapp.com/api/dog-images/ + NUMBER
@@ -87,6 +88,7 @@
 
 ### Reference
 
+- Cors Issue - Stack Overflow
 - Logo animation by [Animate.css](https://animate.style/).
 
 #### License
