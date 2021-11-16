@@ -35,10 +35,7 @@ const Subscriber = require('../models/subscriber')
 // [API Path: /api/items] Retrieve all items from the database
 //
 router.get('/items', async (req, res) => {  
-
-  console.log('[Called]  /api/items - start');
   try{
-
     const item = await Item.find()  
     if(!item) {
       throw new Error()
@@ -50,17 +47,13 @@ router.get('/items', async (req, res) => {
     console.log(error)
     res.send({error: 'No Data Found'})
   }
-  console.log('[Called]  /api/items - end');
 })
 
 //
 // [API Path: /api/items/:id] Retrieve a specific item by id from the database
 //
 router.get('/items/:id', async (req, res) => { 
-
-  console.log(`[Called]  /api/items/${req.params.id} - start`);
   try{
-
     const item = await Item.findOne({ id: req.params.id })
     if(!item) {
       throw new Error()
@@ -72,7 +65,6 @@ router.get('/items/:id', async (req, res) => {
     console.log(error)
     res.send({error: 'No Data Found'})
   } 
-  console.log(`[Called]  /api/items/${req.params.id} - end`);
 })
 
 
@@ -80,22 +72,16 @@ router.get('/items/:id', async (req, res) => {
 // [API Path: /api/members] Retrieve all team members from the database
 //
 router.get('/members', async (req, res) => {
-
-  console.log('[Called]  /api/members - start');
   try {
-    
     const members = await Member.find()
     if(!members){
       throw new Error();
     }
-
     res.send(members)
-
   } catch (error) {
     console.log(error)
     res.send({error: 'No Data Found'})
   }
-  console.log('[Called]  /api/members - end');
 })
 
 
@@ -103,10 +89,7 @@ router.get('/members', async (req, res) => {
 // [API Path: /api/subscribe] Add a subscriber to the database
 //
 router.post('/subscribers', async (req, res) => {  
-  
-  console.log('[Posted]  /api/subscribe - start');
   try {
-
     console.log(req.params.email);
 
     // Check for duplication
@@ -118,7 +101,6 @@ router.post('/subscribers', async (req, res) => {
     }
     // If not exist
     else{
-
       subscriber = new Subscriber(req.params)
       await subscriber.save()
   
@@ -126,37 +108,29 @@ router.post('/subscribers', async (req, res) => {
       //res.redirect('/success.html')
       res.send({status: 'SUCCESS'})
     }
-    
   } catch(error) {
     console.log(error)
 
     // Send the request to the failure page
     res.redirect('/fail.html')    
   }
-  console.log('[Posted]  /api/subscribe - end');
 })
 
 //
 // [API Path: /api/subscribers] Retrieve all team members from the database
 //
 router.get('/subscribers' , async (req, res) => {  
-
-  console.log('[Called]  /api/subscribers - start');
-  
   try{
     const subscribers = await Subscriber.find()
     if(!subscribers){
       throw new Error();
     }
-
     res.send(subscribers)
   
   } catch (error) {
     console.log(error)
     res.send({error: 'No Data Found'})
   }
-  console.log('[Called]  /api/subscribers - end');
 })
-
 
 module.exports = router
