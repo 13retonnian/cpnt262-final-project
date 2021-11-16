@@ -37,7 +37,7 @@ async function initSubscribePage(){
       if(data.status === 'SUCCESS'){
         document.location.href = 'success.html';
       }else{
-        alert("Your email address already exists in the record of our subscribers");
+        alert('/fail.html');
       }
     })
     .catch(function(err){

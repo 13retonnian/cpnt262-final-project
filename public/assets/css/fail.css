@@ -24,26 +24,6 @@ h1 {
   font-size: 3rem;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/homepage.jpg);
-  height: 60vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h2 {
-  font-size: 5rem;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  transition-delay: 1s;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +47,8 @@ nav a {
 nav li:hover {
   background-color: #FEFFD0;
 }
+
+/***********content**********/
 
 
 /*footer*/
