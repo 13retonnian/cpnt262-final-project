@@ -3,7 +3,7 @@ const v = "Hi! I'm a strict mode script!";
 
 let output ='';
 
-fetch('api/items')
+fetch('/api/dog-images')
   .then(function(response){
     if (!response.ok) {
       throw new Error('Not 200 OK');
