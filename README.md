@@ -2,25 +2,31 @@
 
 + Class: Web Dev Fall 2021
 + Instructor: [Tony Grimes](https://github.com/acidtone)
-+ Links: [Github Repo Link](https://github.com/Icahpv/cpnt262-final-project.git) | [Github Pages Link]() | [Heroku Link](https://fantastic-four-dogs.herokuapp.com/)
++ Links: [Github Repo Link](https://github.com/Icahpv/cpnt262-final-project.git) | [Heroku Link](https://fantastic-four-dogs.herokuapp.com/)
 + Deadline: November 15, 2021 at 11:59 pm
 + Course Mark: 40%
 
 ## Welcome to Fantastic Dogs Website!
-- This is a website for dog enthusiasts!
-
-## Random Dog Toy Recommender
-
-- This is a fun random toy recommendation program.
-- Simply enter your dogs characteristics and an average price range and click submit.
-- The recommender will then figure out which toys are suitable for your dog and make a random selection.
+- This is a website for dog enthusiasts! We've got everything your dog needs!
 
 ## About the project
 
 - **Title of Company:** Fantastic Dogs
-- **Fancy Feature:** Dog toy recommender.
 
 ### :pushpin: Instructions
+
+- Home: https://fantastic-four-dogs.herokuapp.com/
+- Gallery: https://fantastic-four-dogs.herokuapp.com/api/dog-images
+- Gallery Items: https://fantastic-four-dogs.herokuapp.com/api/dog-images/ + NUMBER
+- Team Members: https://fantastic-four-dogs.herokuapp.com/api/team
+- Member: https://fantastic-four-dogs.herokuapp.com/api/team + NAME (Alex, Chris, Jesse, Icah)
+
+## Random Dog Toy Recommender
+
+- See our fancy feature in our home page. You should see a button called [**"Toy Recommender"**](https://fantastic-four-dogs.herokuapp.com/dog-toy-recommender.html), but if you don't find it, we also linked it.
+- This is a fun random toy recommendation program.
+- Simply enter your dogs characteristics and an average price range and click submit.
+- The recommender will then figure out which toys are suitable for your dog and make a random selection.
 
 ### Group Members
 
