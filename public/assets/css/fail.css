@@ -68,6 +68,78 @@ nav li:hover {
   background-color: #FEFFD0;
 }
 
+/***********fail-content**********/
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: greenyellow;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(90, 89, 89);
+  letter-spacing: 10px;
+  animation-iteration-count: 3;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_1280.png);
+  background-size: cover;
+}
+
+form {
+  margin-bottom: 5rem;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 5px 30px 5px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: rgb(235, 0, 0);
+  border-width: 5px;
+  background-color: white;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(226, 0, 0);
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(70, 70, 70);
+  letter-spacing: 10px;
+  animation-iteration-count: 3;
+}
+
+fieldset ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+fieldset li {
+  margin: 1rem 4rem 1rem 4rem;
+  list-style: none;
+  background-color: #f3ee6a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+fieldset a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
 
 /*footer*/
 
