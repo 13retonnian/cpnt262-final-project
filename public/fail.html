@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oops! Fail</title>
-  <link rel="stylesheet" href="assets/css/success.css">
+  <title>Fail!</title>
+  <link rel="stylesheet" href="assets/css/fail.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <header>
-    <div class="heading">     
+    <div class="heading">
       <svg class="logo animate__animated animate__jello" width="427" height="294" viewBox="0 0 427 294" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_0_1)">
         <path d="M22.5147 167.676L372.438 24.7159L405.72 106.18L55.7964 249.139L22.5147 167.676Z" fill="#F3EE6A"/>
@@ -44,9 +44,13 @@
     </nav>
   </header>
   <main>
+    <h2 class="animate__animated animate__shakeY">Subscribe Now!</h2>
     <form action="/api/subscribers" method="post">
       <fieldset>
-        <h2></h2>
+        <h3>Sorry, But Something Went Wrong In Creating Your Subscription.</h3>
+        <ul>
+          <li><a href="subscribe.html">Try Again</a></li>
+        </ul>
       </fieldset>
     </form>
   </main>
