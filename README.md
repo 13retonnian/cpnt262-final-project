@@ -83,6 +83,7 @@
 - couldn't figure out how to export dog toy list to recommender so I included it into the html.
 - EVERYTHING BROKE ON THE LAST DAY.
 - Alex changed the code into something we didn't understand so we spent a long time changing it back.
+- couldn't figure out how to stop duplicate subscribers
 
 ### Reference
 

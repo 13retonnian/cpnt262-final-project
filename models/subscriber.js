@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 /*****************/
 
 const subscriberSchema = new mongoose.Schema({
-  type: String,    
-  email: String
+  name: String,    
+  email: String,
 })
 
 /*****************/
