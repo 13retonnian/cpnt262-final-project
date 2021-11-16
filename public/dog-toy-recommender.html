@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fantastic Dogs Dog Toy Recommender</title>
   <link rel="stylesheet" href="assets/css/dog-toy-recommender.css">
+  <script src="./assets/js/dog-toy-list.js" defer></script>
   <script src="./assets/js/dog-toy-recommender.js" defer></script>
+  <!-- animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- google fonts -->
+  <!-- font-family: 'Gluten', cursive; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <div class="heading">
-      <!-- TODO: Insert logo here from Chris-->
-      <svg width="427" height="294" viewBox="0 0 427 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="heading">      
+      <svg class="logo animate__animated animate__jello" width="427" height="294" viewBox="0 0 427 294" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_0_1)">
         <path d="M22.5147 167.676L372.438 24.7159L405.72 106.18L55.7964 249.139L22.5147 167.676Z" fill="#F3EE6A"/>
         <path d="M98.712 150.589C109.365 176.663 96.8628 206.436 70.7884 217.089C44.714 227.742 14.9408 215.24 4.28824 189.165C-6.36436 163.091 6.13749 133.318 32.2119 122.665C58.2863 112.012 88.0594 124.514 98.712 150.589Z" fill="#F3EE6A"/>
@@ -46,13 +52,15 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <!-- TODO: Cards of services -->
-    <h2>Dog Toy Recommender</h2>
+  <aside>
+    <h2 class="animate__animated animate__backInDown">Dog Toy Recommender</h2>
+  </aside>
+  <main>    
+    
     <section>
       <form>        
         <section>
-          <label for="dogSize">What is the size of the dog?</label>          
+          <label for="dogSize">Select the size of your dog:</label>          
           <select id="dogSize" name="dog-size" value="select">            
             <option value="small">Small (Terrier size)</option>
             <option value="medium">Medium (Dalmation size)</option>
@@ -60,11 +68,11 @@
           </select>
         </section>
         <section>
-          <label for="dogAge">How old is the dog?</label>
+          <label for="dogAge">Enter your dogs age:</label>
           <input type="number" id="dogAge" name="dog-age" value="0">          
         </section>        
         <section>
-          <label for="dogChewer">How much does the dog chew on things?</label>
+          <label for="dogChewer">Select how much of a chewer your dog is:</label>
           <select id="dogChewer" name="dog-chewer" value="select"> 
             <option value="rare">Seldomly chews things</option>
             <option value="regular">Chews on things sometimes</option>
@@ -72,7 +80,7 @@
           </select>
         </section>
         <section>          
-          <label for="priceRange">What is the dog toy price range?</label>
+          <label for="priceRange">Select an average dog toy price range:</label>
           <select id="priceRange" name="price-range" value="select">
             <option value="cheap">Inexpensive toy</option>
             <option value="medium">Medium price</option>
@@ -80,12 +88,13 @@
           </select>        
         </section>
         <section>
-          <label for="submit-button">Get dog toy recommendation:</label>
-          <input id="submit-button" type="submit" value="submit-form"></input>
+          <label class="submit-label" for="submit-button">Get random dog toy recommendation!!</label>
+          <input id="submit-button" type="submit" value="Submit"></input>
         </section>
       </form>
+      
     </section>
-    <section class="result-section">
+    <section class="result-section animate__animated animate__heartBeat">
 
     </section>
   </main>

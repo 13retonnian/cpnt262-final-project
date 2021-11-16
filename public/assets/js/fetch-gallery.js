@@ -15,7 +15,7 @@ fetch('/api/items')
     
     for(let i = 0; i < Number(data.length); i++){
       output += `
-      <a href="${data[i].idURL}" target="_blank"><figure>
+      <a href="/item.html?id=${data[i].id}" target="_blank"><figure>
         <img src="assets/images/${data[i].imageID}" alt="${data[i].description}">
         <figcaption>${data[i].name}</figcaption>
       </figure></a>`
