@@ -8,7 +8,13 @@
   <link rel="stylesheet" href="assets/css/dog-toy-recommender.css">
   <script src="./assets/js/dog-toy-list.js" defer></script>
   <script src="./assets/js/dog-toy-recommender.js" defer></script>
+  <!-- animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- google fonts -->
+  <!-- font-family: 'Gluten', cursive; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -46,8 +52,11 @@
       </ul>
     </nav>
   </header>
+  <aside>
+    <h2 class="animate__animated animate__backInDown">Dog Toy Recommender</h2>
+  </aside>
   <main>    
-    <h2>Dog Toy Recommender</h2>
+    
     <section>
       <form>        
         <section>
@@ -79,12 +88,13 @@
           </select>        
         </section>
         <section>
-          <label for="submit-button">Get random dog toy recommendation:</label>
+          <label class="submit-label" for="submit-button">Get random dog toy recommendation!!</label>
           <input id="submit-button" type="submit" value="Submit"></input>
         </section>
       </form>
+      
     </section>
-    <section class="result-section">
+    <section class="result-section animate__animated animate__heartBeat">
 
     </section>
   </main>

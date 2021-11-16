@@ -50,43 +50,140 @@ nav li:hover {
 
 /*content*/
  
+body {
+  background-color: #277cf3;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 2rem;
+  text-align: center;
 }
 
+h2 {
+  font-family: 'Gluten', cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #fdd517;
+  text-shadow: 1px 1px black;
+}
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 2rem;
+  text-shadow: 1px 1px black;
 }
 
-.result-selection {
-  border: 1px solid black;
-  padding: 2rem;
+.result-section {
+  border-radius: 10px;
+  height: 30rem;
+  width: 30rem;
+  background-image: url(https://cdn.pixabay.com/photo/2021/03/20/03/16/speech-bubble-6109031_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-delay: 1s;
 }
+
+label {
+  height: 2rem;
+  width: 30rem;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+input {
+  height: 3rem;
+  width: 5rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+select {
+  height: 15rem;
+  width: 20rem;
+  text-align: center;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  background-image: url(https://cdn.pixabay.com/photo/2013/07/12/12/35/speech-bubble-145978_1280.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+option {
+  font-size: 12px;
+}
+
+.submit-label {
+  font-size: 20px;
+  color: #e33d2e;
+  text-shadow: 1px 1px black;
+}
+
+#submit-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: rgb(255, 157, 157);
+  cursor: pointer;
+  font-weight: bold;
+  margin: 3rem;
+  animation-iteration-count: infinite;
+}
+
+#submit-button:hover {
+  background-color: rgb(179, 255, 179);
+}
+
+h3 {
+  list-style: none;
+  margin: 2rem;
+  font-size: 1.5rem;
+  text-shadow: none;
+}
+
 
 /*footer*/
 
 footer {
+  padding: 2rem;
+  background-color: #FEFFD0;
+} 
+
+footer ul {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #FEFFD0;
-  height: 20vh;
-} 
-
-footer ul {
   list-style: none;
-  margin: 2rem;
 }
 
+footer li {
+  padding: 5px;
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

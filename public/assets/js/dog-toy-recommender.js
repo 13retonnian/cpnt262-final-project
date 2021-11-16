@@ -85,7 +85,7 @@ const handleSubmit = function(event) {
   addToysToChoiceList()
   //randomize which toy is selected from the choice list and output to page  
   const randomNumber = Math.floor((Math.random() * choiceList.length)) 
-  resultSection.innerHTML = `${choiceList[randomNumber].name}`
+  resultSection.innerHTML = `<h3>${choiceList[randomNumber].name}</h3>`
 }
 
 form.addEventListener("submit", handleSubmit);
