@@ -8,7 +8,7 @@ if (urlParams.get('id') !== null) {
 
   const id = urlParams.get('id')
 
-  fetch(`/api/items/${id}`)
+  fetch(`/api/dog-images/${id}`)
     .then(function(response){
       if (!response.ok) {
         throw new Error('Not 200 OK');
