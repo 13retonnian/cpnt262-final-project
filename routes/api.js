@@ -86,7 +86,9 @@ router.get('/members', async (req, res) => {
 router.post('/subscribers', async (req, res) => {  
   try {
     const subscriber = new Subscriber(req.body)
-  
+    
+    console.log(subscriber)
+
     await subscriber.save()
   
     console.log(subscriber)
