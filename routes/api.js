@@ -82,16 +82,19 @@ router.get('/members', async (req, res) => {
 })
 
 //Subscribers/Subscribe
-
 router.post('/subscribers', async (req, res) => {  
   try {
-    const subscriber = new Subscriber(req.body)
-    
-    console.log(subscriber)
-
+    //get the subscriber from the html form
+    const subscriber = new Subscriber(req.body)   
+    //get the subscribers from the database
+    const subscribers = await Subscriber.find({})
+    //look for subscribers that are already in the database if there's a duplicate then throw error
+    for(let i = 0; i < subscribers.length; i++) {
+      if (subscribers[i].email === subscriber.email) {        
+        throw new Error()    
+      }
+    } 
     await subscriber.save()
-  
-    console.log(subscriber)
     res.redirect('/success.html')
 
   } catch(err) {
