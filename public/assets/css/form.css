@@ -80,6 +80,8 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   background-image: url(https://cdn.pixabay.com/photo/2021/10/31/15/22/paws-6757808_1280.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 form {
